@@ -4,10 +4,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
+import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import java.util.*
@@ -21,6 +20,10 @@ class RecyclerViewAdapter(private val context: Context, private val unitsList: M
         var unit_name: TextView = itemView.findViewById(R.id.unit_name)
         var unit_civ: TextView = itemView.findViewById(R.id.unit_civ)
         var unit_description: TextView = itemView.findViewById(R.id.unit_description)
+        var cardView: CardView = itemView.findViewById(R.id.card)
+        var text_layout: LinearLayout = itemView.findViewById(R.id.text_layout)
+
+
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -33,7 +36,22 @@ class RecyclerViewAdapter(private val context: Context, private val unitsList: M
         holder.unit_name.text = currentItem.unit_name
         holder.unit_civ.text = currentItem.unit_civ
         holder.unit_description.text = currentItem.unit_description
-        holder.unit_image.setImageResource(R.drawable.ic_launcher_background)
+
+        val id: Int =
+            context.resources.getIdentifier(currentItem.unit_image, "drawable", context.packageName)
+        holder.unit_image.setImageResource(id)
+        holder.cardView.setOnLongClickListener {
+            if (holder.text_layout.layoutParams.height != RecyclerView.LayoutParams.WRAP_CONTENT) {
+                holder.text_layout.layoutParams.height = RecyclerView.LayoutParams.WRAP_CONTENT
+                Toast.makeText(context, "OK", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                var scale: Float = context.resources.displayMetrics.density;
+                holder.text_layout.layoutParams.height = (150 * scale).toInt()
+            }
+            holder.text_layout.requestLayout()
+            true
+        }
     }
 
     override fun getItemCount(): Int {

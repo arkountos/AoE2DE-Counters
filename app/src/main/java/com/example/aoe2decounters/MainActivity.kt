@@ -57,13 +57,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         var unit_description: String
         var unit_civilization: String
         var unit_type: String
+        var unit_image: String
         for (myUnit in units_array){
             Log.d("Ident", myUnit)
             unit_name = getString(resources.getIdentifier(myUnit, "string", this.packageName))
             unit_description = getString(resources.getIdentifier(myUnit.toString() + "D", "string", this.packageName))
             unit_civilization = getString(resources.getIdentifier(myUnit.toString() + "C", "string", this.packageName))
             unit_type = getString(resources.getIdentifier(myUnit.toString() + "T", "string", this.packageName))
-            unitsList.add(Unit(unit_name, unit_civilization, unit_type, unit_description))
+            unit_image = getString(resources.getIdentifier(myUnit.toString() + "I", "string", this.packageName))
+
+            unitsList.add(Unit(unit_name, unit_civilization, unit_type, unit_description, unit_image))
             Log.d("UnitsArray", ": $unit_name, " + R.string.Arambai)
         }
 
