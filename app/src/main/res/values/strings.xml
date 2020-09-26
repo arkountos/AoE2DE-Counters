@@ -9,6 +9,29 @@
     <string name="Disclaimer">"Age of Empires 2: Definitive Edition" © Microsoft Corporation. "AoE2DE Counters" was created under Microsoft\'s "Game Content Usage Rules" using assets from "Age of Empires 2: Definitive Edition", and it is not endorsed by or affiliated with Microsoft.  </string>
     
     <string-array name="Units">
+        <item>MilitiaLine</item>
+        <item>SpearmanLine</item>
+        <item>EagleLine</item>
+        <item>ArcherLine</item>
+        <item>SkirmisherLine</item>
+        <item>CavalryArcherLine</item>
+        <item>HandCannoneer</item>
+        <item>ScoutLine</item>
+        <item>KnightLine</item>
+        <item>CamelLine</item>
+        <item>BattleElephantLine</item>
+        <item>RamLine</item>
+        <item>MangonelLine</item>
+        <item>ScorpionLine</item>
+        <item>BombardCannon</item>
+        <item>SiegeTower</item>
+        <item>Monk</item>
+        <item>Petard</item>
+        <item>Trebuchet</item>
+        <item>GalleyLine</item>
+        <item>FireGalleyLine</item>
+        <item>DemolitionShipLine</item>
+        <item>CannonGalleonLine</item>
         <item>Longbowman</item>
         <item>Cataphract</item>
         <item>WoadRaider</item>
@@ -55,6 +78,125 @@
         <item>Keshik</item>
         <item>FlamingCamel</item>
     </string-array>
+
+    <!-->Base Units<-->
+    <string name="MilitiaLine">Militia Line</string>
+    <string name="MilitiaLineD">Militia Line</string>
+    <string name="MilitiaLineC">Militia Line</string>
+    <string name="MilitiaLineT">Militia Line</string>
+
+    <string name="SpearmanLine">Spearman Line</string>
+    <string name="SpearmanLineD">Spearman Line</string>
+    <string name="SpearmanLineC">Spearman Line</string>
+    <string name="SpearmanLineT">Spearman Line</string>
+
+    <string name="EagleLine">Eagle Line</string>
+    <string name="EagleLineD">Eagle Line</string>
+    <string name="EagleLineC">Eagle Line</string>
+    <string name="EagleLineT">Eagle Line</string>
+
+    <string name="ArcherLine">Archer Line</string>
+    <string name="ArcherLineD">Archer Line</string>
+    <string name="ArcherLineC">Archer Line</string>
+    <string name="ArcherLineT">Archer Line</string>
+
+    <string name="SkirmisherLine">Skirmisher Line</string>
+    <string name="SkirmisherLineD">Skirmisher Line</string>
+    <string name="SkirmisherLineC">Skirmisher Line</string>
+    <string name="SkirmisherLineT">Skirmisher Line</string>
+
+    <string name="CavalryArcherLine">Cavalry Archer Line</string>
+    <string name="CavalryArcherLineD">Cavalry Archer Line</string>
+    <string name="CavalryArcherLineC">Cavalry Archer Line</string>
+    <string name="CavalryArcherLineT">Cavalry Archer Line</string>
+
+    <string name="HandCannoneer">Hand Cannoneer</string>
+    <string name="HandCannoneerD">Hand Cannoneer</string>
+    <string name="HandCannoneerC">Hand Cannoneer</string>
+    <string name="HandCannoneerT">Hand Cannoneer</string>
+
+    <string name="ScoutLine">Scout Line</string>
+    <string name="ScoutLineD">Scout Line</string>
+    <string name="ScoutLineC">Scout Line</string>
+    <string name="ScoutLineT">Scout Line</string>
+
+    <string name="KnightLine">Knight Line</string>
+    <string name="KnightLineD">Knight Line</string>
+    <string name="KnightLineC">Knight Line</string>
+    <string name="KnightLineT">Knight Line</string>
+
+    <string name="CamelLine">Camel Line</string>
+    <string name="CamelLineD">Camel Line</string>
+    <string name="CamelLineC">Camel Line</string>
+    <string name="CamelLineT">Camel Line</string>
+
+    <string name="RamLine">Battering Ram Line</string>
+    <string name="RamLineD">Battering Ram Line</string>
+    <string name="RamLineC">Battering Ram Line</string>
+    <string name="RamLineT">Battering Ram Line</string>
+
+    <string name="MangonelLine">Mangonel Line</string>
+    <string name="MangonelLineD">Mangonel Line</string>
+    <string name="MangonelLineC">Mangonel Line</string>
+    <string name="MangonelLineT">Mangonel Line</string>
+
+    <string name="ScorpionLine">Scorpion Line</string>
+    <string name="ScorpionLineD">Scorpion Line</string>
+    <string name="ScorpionLineC">Scorpion Line</string>
+    <string name="ScorpionLineT">Scorpion Line</string>
+
+    <string name="BombardCannon">Bombard Cannon</string>
+    <string name="BombardCannonD">Bombard Cannon</string>
+    <string name="BombardCannonC">Bombard Cannon</string>
+    <string name="BombardCannonT">Bombard Cannon</string>
+
+    <string name="SiegeTower">Siege Tower</string>
+    <string name="SiegeTowerD">Siege Tower</string>
+    <string name="SiegeTowerC">Siege Tower</string>
+    <string name="SiegeTowerT">Siege Tower</string>
+
+    <string name="Monk">Monk</string>
+    <string name="MonkD">Monk</string>
+    <string name="MonkC">Monk</string>
+    <string name="MonkT">Monk</string>
+
+    <string name="Petard">Petard</string>
+    <string name="PetardD">Petard</string>
+    <string name="PetardC">Petard</string>
+    <string name="PetardT">Petard</string>
+
+    <string name="Trebuchet">Trebuchet</string>
+    <string name="TrebuchetD">Trebuchet</string>
+    <string name="TrebuchetC">Trebuchet</string>
+    <string name="TrebuchetT">Trebuchet</string>
+
+    <string name="GalleyLine">Galley Line</string>
+    <string name="GalleyLineD">Galley Line</string>
+    <string name="GalleyLineC">Galley Line</string>
+    <string name="GalleyLineT">Galley Line</string>
+
+    <string name="FireGalleyLine">Fire Galley Line</string>
+    <string name="FireGalleyLineD">Fire Galley Line</string>
+    <string name="FireGalleyLineC">Fire Galley Line</string>
+    <string name="FireGalleyLineT">Fire Galley Line</string>
+
+    <string name="DemolitionShipLine">Demolition Ship Line</string>
+    <string name="DemolitionShipLineD">Demolition Ship Line</string>
+    <string name="DemolitionShipLineC">Demolition Ship Line</string>
+    <string name="DemolitionShipLineT">Demolition Ship Line</string>
+
+    <string name="CannonGalleonLine">Cannon Galleon Line</string>
+    <string name="CannonGalleonLineD">Cannon Galleon Line</string>
+    <string name="CannonGalleonLineC">Cannon Galleon Line</string>
+    <string name="CannonGalleonLineT">Cannon Galleon Line</string>
+
+
+
+
+
+
+
+    <!-->Unique Units here<-->
 
     <string name="Longbowman">Longbowman</string>
     <string name="LongbowmanDes">British unique unit. Powerful archer with long range.</string>
