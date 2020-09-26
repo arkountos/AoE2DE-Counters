@@ -8,91 +8,287 @@
     <string name="close">close</string>
     <string name="Disclaimer">"Age of Empires 2: Definitive Edition" © Microsoft Corporation. "AoE2DE Counters" was created under Microsoft\'s "Game Content Usage Rules" using assets from "Age of Empires 2: Definitive Edition", and it is not endorsed by or affiliated with Microsoft.  </string>
     
-    
-    
+    <string-array name="Units">
+        <item>Longbowman</item>
+        <item>Cataphract</item>
+        <item>WoadRaider</item>
+        <item>ChuKoNu</item>
+        <item>ThrowingAxeman</item>
+        <item>Huskarl</item>
+        <item>Samurai</item>
+        <item>Mangudai</item>
+        <item>WarElephant</item>
+        <item>Mameluke</item>
+        <item>TeutKnight</item>
+        <item>Janissary</item>
+        <item>Berserk</item>
+        <item>Longboat</item>
+        <item>Jaguar</item>
+        <item>Tarkan</item>
+        <item>WarWagon</item>
+        <item>TurtleShip</item>
+        <item>PlumedArcher</item>
+        <item>Conquistador</item>
+        <item>Missionary</item>
+        <item>Kamayuk</item>
+        <item>Slinger</item>
+        <item>ElephantArcher</item>
+        <item>ImperialCamelRider</item>
+        <item>GenoeseCrossbowman</item>
+        <item>Condottiero</item>
+        <item>MagyarHuszar</item>
+        <item>Boyar</item>
+        <item>CamelArcher</item>
+        <item>Genitour</item>
+        <item>ShotelWarrior</item>
+        <item>Gbeto</item>
+        <item>OrganGun</item>
+        <item>Caravel</item>
+        <item>Arambai</item>
+        <item>BallistaElephant</item>
+        <item>KarambitWarrior</item>
+        <item>RattanArcher</item>
+        <item>ImperialSkirmisher</item>
+        <item>Konnik</item>
+        <item>Kipchak</item>
+        <item>Leitis</item>
+        <item>Keshik</item>
+        <item>FlamingCamel</item>
+    </string-array>
+
+    <string name="Longbowman">Longbowman</string>
     <string name="LongbowmanDes">British unique unit. Powerful archer with long range.</string>
     <string name="LongbowmanCiv">Britons</string>
     <string name="LongbowmanType">Archer</string>
-    
+
+
+    <string name="Cataphract">Cataphract</string>
     <string name="CataphractDes">Byzantine unique unit. Heavily armored cavalry.</string>
     <string name="CataphractCiv">Byzantines</string>
     <string name="CataphractType">Cavalry</string>
-    
+
+
+    <string name="WoadRaider">Woad Raider</string>
     <string name="WoadRaiderDes">Celtic unique unit. Exceptionally quick infantry.</string>
     <string name="WoadRaiderCiv">Celts</string>
     <string name="WoadRaiderType">Infantry</string>
 
+    <string name="ChuKoNu">Chu Ko Nu</string>
     <string name="ChuKoNuDes">Chinese unique unit. Archer with mediocre range. Fires large number of arrows very quickly.</string>
     <string name="ChuKoNuCiv">Chinese</string>
     <string name="ChuKoNuType">Archer</string>
 
+    <string name="ThrowingAxeman">Throwing Axeman</string>
     <string name="ThrowingAxemanD">Frankish unique unit. Infantry with ranged attack.</string>
     <string name="ThrowingAxemanC">Franks</string>
     <string name="ThrowingAxemanT">Infantry</string>
 
+    <string name="Huskarl">Huskarl</string>
     <string name="HuskarlD">Gothic unique unit. Infantry with substantial pierce armor, virtually immune to archer fire.</string>
     <string name="HuskarlC">Goths</string>
     <string name="HuskarlT">Infantry</string>
-    
+
+    <string name="Samurai">Samurai</string>
     <string name="SamuraiD">Japanese unique unit. Infantry with fast attack.</string>
     <string name="SamuraiC">Japanese</string>
     <string name="SamuraiT">Infantry</string>
-    
+
+    <string name="Mangudai">Mangudai</string>
     <string name="MangudaiD">Mongol unique unit. Cavalry archer with attack bonus vs. siege weapons.</string>
     <string name="MangudaiC">Mongols</string>
     <string name="MangudaiT">Archer, Cavalry</string>
 
+    <string name="WarElephant">War Elephant</string>
     <string name="WarElephantD">Persian unique unit. Slow, powerful, strong, and well-armored cavalry.</string>
     <string name="WarElephantC">Persians</string>
     <string name="WarElephantT">Cavalry</string>
 
+    <string name="Mameluke">Mameluke</string>
     <string name="MamelukeD">Saracen unique unit. Camel with hand-to-hand attack at distance. Excels vs. other mounted units.</string>
     <string name="MamelukeC">Saracens</string>
     <string name="MamelukeT">Cavalry</string>
-    
+
+    <string name="TeutKnight">Teutonic Knight</string>
     <string name="TeutKnightD">Teutonic unique unit. Infantry with effective armor and slow but powerful attack.</string>
     <string name="TeutKnightC">Teutons</string>
     <string name="TeutKnightT">Infantry</string>
-    
+
+    <string name="Janissary">Janissary</string>
     <string name="JanissaryD">Turkish unique unit. Hand Cannoneer with longer range and no minimum range. Powerful close attack, but inaccurate at range.</string>
     <string name="JanissaryC">Turks</string>
     <string name="JanissaryT">Gunpowder</string>
 
+    <string name="Berserk">Berserk</string>
     <string name="BerserkD">Viking unique unit. Infantry that slowly heals itself.</string>
     <string name="BerserkC">Vikings</string>
     <string name="BerserkT">Infantry</string>
 
+    <string name="Longboat">Longboat</string>
     <string name="LongboatD">Viking unique unit. Fires multiple arrows.</string>
     <string name="LongboatC">Vikings</string>
     <string name="LongboatT">Naval Vessel</string>
 
+    <string name="Jaguar">Jaguar</string>
     <string name="JaguarD">Aztec unique unit. Attack bonus vs. other infantry.</string>
     <string name="JaguarC">Aztecs</string>
     <string name="JaguarT">Infantry</string>
-    
+
+    <string name="Tarkan">Tarkan</string>
     <string name="TarkanD">Hun unique unit. Cavalry with attack bonus vs. buildings.</string>
     <string name="TarkanC">Huns</string>
     <string name="TarkanT">Cavalry</string>
 
+    <string name="WarWagon">War Wagon</string>
     <string name="WarWagonD">Korean unique unit. Heavily armored horse-drawn archer unit.</string>
     <string name="WarWagonC">Koreans</string>
     <string name="WarWagonT">Archer, Cavalry</string>
-    
+
+    <string name="TurtleShip">Turtle Ship</string>
     <string name="TurtleShipD">Korean unique unit. Slow, ironclad battleship used to destroy other ships at close range.</string>
     <string name="TurtleShipC">Koreans</string>
     <string name="TurtleShipT">Naval Vessel, Gunpowder</string>
-    
+
+    <string name="PlumedArcher">Plumed Archer</string>
     <string name="PlumedArcherD">Mayan unique unit. Strong, fast, well-armored archer with less attack than other archers.</string>
     <string name="PlumedArcherC">Mayans</string>
     <string name="PlumedArcherT">Archer</string>
-    
+
+    <string name="Conquistador">Conquistador</string>
     <string name="ConquistadorD">Spanish unique unit. Mounted Hand Cannoneer. Powerful close attack, but inaccurate at range.</string>
     <string name="ConquistadorC">Spanish</string>
     <string name="ConquistadorT">Cavalry, Gunpowder</string>
 
+    <string name="Missionary">Missionary</string>
     <string name="MissionaryD">Spanish unique unit. Mounted Monk. Converts enemy units and heals friendly units like Monks, but cannot pick up Relics.</string>
     <string name="MissionaryC">Spanish</string>
     <string name="MissionaryT">Cavalry, Monk, Healer</string>
+
+    <string name="Kamayuk">Kamayuk</string>
+    <string name="KamayukD">Inca unique unit. Infantry unit with attack bonus vs. cavalry. Carries a long spear to infiltrate formations.</string>
+    <string name="KamayukC">Incas</string>
+    <string name="KamayukT">Infantry</string>
+
+    <string name="Slinger">Slinger</string>
+    <string name="SlingerD">Inca unique unit. Ranged unit with attack bonus vs. infantry.</string>
+    <string name="SlingerC">Incas</string>
+    <string name="SlingerT">Archer</string>
+
+    <string name="ElephantArcher">Elephant Archer</string>
+    <string name="ElephantArcherD">Indian unique unit. Heavy mounted archer.</string>
+    <string name="ElephantArcherC">Indians</string>
+    <string name="ElephantArcherT">Cavalry, Archer</string>
+
+    <string name="ImperialCamelRider">Imperial Camel Rider</string>
+    <string name="ImperialCamelRiderD">Stronger than Heavy Camel. Excels at killing other mounted units.</string>
+    <string name="ImperialCamelRiderC">Indians</string>
+    <string name="ImperialCamelRiderT">Cavalry</string>
+
+    <string name="GenoeseCrossbowman">Genoese Crossbowman</string>
+    <string name="GenoeseCrossbowmanD">Italian unique unit. Anti cavalry archery unit.</string>
+    <string name="GenoeseCrossbowmanC">Italians</string>
+    <string name="GenoeseCrossbowmanT">Archer</string>
+    
+    <string name="Condottiero">Condottiero</string>
+    <string name="CondottieroD">Italian mercenary unit. Quick infantry.</string>
+    <string name="CondottieroC">Italians</string>
+    <string name="CondottieroT">Infantry</string>
+
+    <string name="MagyarHuszar">Magyar Huszar</string>
+    <string name="MagyarHuszarD">Magyar unique unit. Light cavalry unit with a bonus vs. siege</string>
+    <string name="MagyarHuszarC">Magyars</string>
+    <string name="MagyarHuszarT">Cavalry</string>
+
+    <string name="Boyar">Boyar</string>
+    <string name="BoyarD">Slavic Unique Unit. Heavily armored cavalry; resistant to melee attack.</string>
+    <string name="BoyarC">Slavs</string>
+    <string name="BoyarT">Cavalry</string>
+    
+    <string name="CamelArcher">Camel Archer</string>
+    <string name="CamelArcherD">Berber unique unit. Cavalry archer with an attack bonus vs. cavalry archers.</string>
+    <string name="CamelArcherC">Berbers</string>
+    <string name="CamelArcherT">Cavalry, Archer</string>
+    
+    <string name="Genitour">Genitour</string>
+    <string name="GenitourD">Berber unique unit. Mounted Skirmisher.</string>
+    <string name="GenitourC">Berbers</string>
+    <string name="GenitourT">Cavalry, Archer</string>
+
+    <string name="ShotelWarrior">Shotel Warrior</string>
+    <string name="ShotelWarriorD">Ethiopian unique unit. Cheap infantry unit with high creation speed.</string>
+    <string name="ShotelWarriorC">Ethiopians</string>
+    <string name="ShotelWarriorT">Infantry</string>
+
+    <string name="Gbeto">Gbeto</string>
+    <string name="GbetoD">Malian unique unit. Quick infantry unit with a high ranged attack.</string>
+    <string name="GbetoC">Malians</string>
+    <string name="GbetoT">Infantry</string>
+    
+    <string name="OrganGun">Organ Gun</string>
+    <string name="OrganGunD">Portuguese unique unit. Siege weapon that fires a volley of bullets. Very effective against large groups of units.</string>
+    <string name="OrganGunC">Portuguese</string>
+    <string name="OrganGunT">Siege, Gunpowder</string>
+
+    <string name="Caravel">Caravel</string>
+    <string name="CaravelD">Portuguese unique unit. Boat effective vs. large fleets because each shot damages multiple units.</string>
+    <string name="CaravelC">Portuguese</string>
+    <string name="CaravelT">Naval Vessel</string>
+
+    <string name="Arambai">Arambai</string>
+    <string name="ArambaiD">Burmese unique unit. Mounted dart thrower.</string>
+    <string name="ArambaiC">Burmese</string>
+    <string name="ArambaiT">Cavalry, Archer</string>
+
+    <string name="BallistaElephant">Ballista Elephant</string>
+    <string name="BallistaElephantD">Khmer unique unit. Heavy cavalry equipped with a Scorpion. Can fell trees.</string>
+    <string name="BallistaElephantC">Khmer</string>
+    <string name="BallistaElephantT">Cavalry, Siege</string>
+
+    <string name="KarambitWarrior">Karambit Warrior</string>
+    <string name="KarambitWarriorD">Malay unique unit. Cheap and weak infantry unit that only takes half a population spot.</string>
+    <string name="KarambitWarriorC">Malay</string>
+    <string name="KarambitWarriorT">Infantry</string>
+
+    <string name="RattanArcher">Rattan Archer</string>
+    <string name="RattanArcherD">Vietnamese unique unit. Heavily armored Archer.</string>
+    <string name="RattanArcherC">Vietnamese</string>
+    <string name="RattanArcherT">Archer</string>
+
+    <string name="ImperialSkirmisher">Imperial Skirmisher</string>
+    <string name="ImperialSkirmisherD">Stronger than Elite Skirmisher. Ranged unit equipped with armor vs. archer attacks.</string>
+    <string name="ImperialSkirmisherC">Vietnamese</string>
+    <string name="ImperialSkirmisherT">Archer</string>
+
+    <string name="Konnik">Konnik</string>
+    <string name="KonnikD">Bulgarian unique cavalry unit that fights on as infantry when felled.</string>
+    <string name="KonnikC">Bulgarians</string>
+    <string name="KonnikT">Cavalry, Infantry</string>
+
+    <string name="Kipchak">Kipchak</string>
+    <string name="KipchakD">Cuman unique cavalry archer with rapid-fire attack.</string>
+    <string name="KipchakC">Cumans</string>
+    <string name="KipchakT">Cavalry, Archer</string>
+
+    <string name="Leitis">Leitis</string>
+    <string name="LeitisD">Lithuanian unique cavalry unit with attack that ignores armor.</string>
+    <string name="LeitisC">Lithuanians</string>
+    <string name="LeitisT">Cavalry</string>
+    
+    <string name="Keshik">Keshik</string>
+    <string name="KeshikD">Tatar unique cavalry unit that generates gold when fighting other units.</string>
+    <string name="KeshikC">Tatars</string>
+    <string name="KeshikT">Cavalry</string>
+
+    <string name="FlamingCamel">Flaming Camel</string>
+    <string name="FlamingCamelD">Incendiary camel loaded with flammable hay and brush. Strong vs. mounted units, especially elephants. Weak vs. archers and infantry. Self-destructs when used.</string>
+    <string name="FlamingCamelC">Tatars</string>
+    <string name="FlamingCamelT">Suicide</string>
+
+
+
+
+
+
+
 
 
 
