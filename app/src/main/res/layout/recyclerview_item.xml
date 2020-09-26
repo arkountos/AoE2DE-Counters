@@ -36,7 +36,7 @@
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 />
             <TextView
-                android:id="@+id/unit_info"
+                android:id="@+id/unit_civ"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -45,6 +45,7 @@
                 android:textColor="?android:attr/textColorSecondary"
                 />
             <TextView
+                android:id="@+id/unit_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"

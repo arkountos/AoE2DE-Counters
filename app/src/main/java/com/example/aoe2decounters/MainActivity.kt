@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.Menu
 import android.view.MenuInflater
@@ -50,9 +51,25 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.isDrawerIndicatorEnabled = true
         toggle.syncState()
 
-        unitsList.add(Unit("Cataphract", R.string.CataphractDes.toString(), arrayOf()))
-        unitsList.add(Unit("Spearman", counters_input = arrayOf("Archer Line", "Militia Line"), unit_info_input = "General Unit"))
-        unitsList.add(Unit("Paladin", "General Unit", arrayOf("Spearman")))
+        var units_array = resources.getStringArray(R.array.Units)
+
+        var unit_name: String
+        var unit_description: String
+        var unit_civilization: String
+        var unit_type: String
+        for (myUnit in units_array){
+            Log.d("Ident", myUnit)
+            unit_name = getString(resources.getIdentifier(myUnit, "string", this.packageName))
+            unit_description = getString(resources.getIdentifier(myUnit.toString() + "D", "string", this.packageName))
+            unit_civilization = getString(resources.getIdentifier(myUnit.toString() + "C", "string", this.packageName))
+            unit_type = getString(resources.getIdentifier(myUnit.toString() + "T", "string", this.packageName))
+            unitsList.add(Unit(unit_name, unit_civilization, unit_type, unit_description))
+            Log.d("UnitsArray", ": $unit_name, " + R.string.Arambai)
+        }
+
+//        unitsList.add(Unit("Cataphract", R.string.CataphractDes.toString(), arrayOf()))
+//        unitsList.add(Unit("Spearman", counters_input = arrayOf("Archer Line", "Militia Line"), unit_info_input = "General Unit"))
+//        unitsList.add(Unit("Paladin", "General Unit", arrayOf("Spearman")))
 
         recyclerViewManager = LinearLayoutManager(this)
         recyclerViewAdapter = RecyclerViewAdapter(this, unitsList)

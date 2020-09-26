@@ -1,10 +1,12 @@
 package com.example.aoe2decounters
 
-class Unit (private val unit_name_input: String, private val unit_info_input: String,  private val counters_input: Array<String>){
+class Unit (private val unit_name_input: String, private val unit_civ_input: String, private val unit_type_input: String, private val unit_description_input: String){
     val unit_name = unit_name_input
-    val unit_info: String = unit_info_input
+    val unit_civ: String = unit_civ_input
+    val unit_type: String = unit_type_input
+    val unit_description: String = unit_description_input
 
-    val counters = counters_input
+//    val counters = counters_input
 
 
 }

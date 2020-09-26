@@ -19,7 +19,8 @@ class RecyclerViewAdapter(private val context: Context, private val unitsList: M
     class MyViewHolder(itemView: View) : ViewHolder(itemView) {
         var unit_image: ImageView = itemView.findViewById(R.id.unit_image)
         var unit_name: TextView = itemView.findViewById(R.id.unit_name)
-        var unit_info: TextView = itemView.findViewById(R.id.unit_info)
+        var unit_civ: TextView = itemView.findViewById(R.id.unit_civ)
+        var unit_description: TextView = itemView.findViewById(R.id.unit_description)
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -30,7 +31,8 @@ class RecyclerViewAdapter(private val context: Context, private val unitsList: M
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         var currentItem = unitsList[position]
         holder.unit_name.text = currentItem.unit_name
-        holder.unit_info.text = currentItem.unit_info
+        holder.unit_civ.text = currentItem.unit_civ
+        holder.unit_description.text = currentItem.unit_description
         holder.unit_image.setImageResource(R.drawable.ic_launcher_background)
     }
 

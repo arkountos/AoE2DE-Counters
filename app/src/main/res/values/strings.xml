@@ -130,6 +130,11 @@
     <string name="CamelLineC">Camel Line</string>
     <string name="CamelLineT">Camel Line</string>
 
+    <string name="BattleElephantLine">Battle Elephant Line</string>
+    <string name="BattleElephantLineD">Battle Elephant Line</string>
+    <string name="BattleElephantLineC">Battle Elephant Line</string>
+    <string name="BattleElephantLineT">Battle Elephant Line</string>
+
     <string name="RamLine">Battering Ram Line</string>
     <string name="RamLineD">Battering Ram Line</string>
     <string name="RamLineC">Battering Ram Line</string>
@@ -199,26 +204,26 @@
     <!-->Unique Units here<-->
 
     <string name="Longbowman">Longbowman</string>
-    <string name="LongbowmanDes">British unique unit. Powerful archer with long range.</string>
-    <string name="LongbowmanCiv">Britons</string>
-    <string name="LongbowmanType">Archer</string>
+    <string name="LongbowmanD">British unique unit. Powerful archer with long range.</string>
+    <string name="LongbowmanC">Britons</string>
+    <string name="LongbowmanT">Archer</string>
 
 
     <string name="Cataphract">Cataphract</string>
-    <string name="CataphractDes">Byzantine unique unit. Heavily armored cavalry.</string>
-    <string name="CataphractCiv">Byzantines</string>
-    <string name="CataphractType">Cavalry</string>
+    <string name="CataphractD">Byzantine unique unit. Heavily armored cavalry.</string>
+    <string name="CataphractC">Byzantines</string>
+    <string name="CataphractT">Cavalry</string>
 
 
     <string name="WoadRaider">Woad Raider</string>
-    <string name="WoadRaiderDes">Celtic unique unit. Exceptionally quick infantry.</string>
-    <string name="WoadRaiderCiv">Celts</string>
-    <string name="WoadRaiderType">Infantry</string>
+    <string name="WoadRaiderD">Celtic unique unit. Exceptionally quick infantry.</string>
+    <string name="WoadRaiderC">Celts</string>
+    <string name="WoadRaiderT">Infantry</string>
 
     <string name="ChuKoNu">Chu Ko Nu</string>
-    <string name="ChuKoNuDes">Chinese unique unit. Archer with mediocre range. Fires large number of arrows very quickly.</string>
-    <string name="ChuKoNuCiv">Chinese</string>
-    <string name="ChuKoNuType">Archer</string>
+    <string name="ChuKoNuD">Chinese unique unit. Archer with mediocre range. Fires large number of arrows very quickly.</string>
+    <string name="ChuKoNuC">Chinese</string>
+    <string name="ChuKoNuT">Archer</string>
 
     <string name="ThrowingAxeman">Throwing Axeman</string>
     <string name="ThrowingAxemanD">Frankish unique unit. Infantry with ranged attack.</string>
