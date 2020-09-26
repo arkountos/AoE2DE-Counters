@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">AoE2DE Counters</string>
+    <string name="title">Title</string>
+    <string name="secondary_text">Secondary Text</string>
+    <string name="supporting_text">Supporting Text</string>
+    <string name="content_description_media">Content Description Media</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="Disclaimer">"Age of Empires 2: Definitive Edition" © Microsoft Corporation. "AoE2DE Counters" was created under Microsoft\'s "Game Content Usage Rules" using assets from "Age of Empires 2: Definitive Edition", and it is not endorsed by or affiliated with Microsoft.  </string>
+    
+    
+    
+    <string name="LongbowmanDes">British unique unit. Powerful archer with long range.</string>
+    <string name="LongbowmanCiv">Britons</string>
+    <string name="LongbowmanType">Archer</string>
+    
+    <string name="CataphractDes">Byzantine unique unit. Heavily armored cavalry.</string>
+    <string name="CataphractCiv">Byzantines</string>
+    <string name="CataphractType">Cavalry</string>
+    
+    <string name="WoadRaiderDes">Celtic unique unit. Exceptionally quick infantry.</string>
+    <string name="WoadRaiderCiv">Celts</string>
+    <string name="WoadRaiderType">Infantry</string>
+
+    <string name="ChuKoNuDes">Chinese unique unit. Archer with mediocre range. Fires large number of arrows very quickly.</string>
+    <string name="ChuKoNuCiv">Chinese</string>
+    <string name="ChuKoNuType">Archer</string>
+
+    <string name="ThrowingAxemanD">Frankish unique unit. Infantry with ranged attack.</string>
+    <string name="ThrowingAxemanC">Franks</string>
+    <string name="ThrowingAxemanT">Infantry</string>
+
+    <string name="HuskarlD">Gothic unique unit. Infantry with substantial pierce armor, virtually immune to archer fire.</string>
+    <string name="HuskarlC">Goths</string>
+    <string name="HuskarlT">Infantry</string>
+    
+    <string name="SamuraiD">Japanese unique unit. Infantry with fast attack.</string>
+    <string name="SamuraiC">Japanese</string>
+    <string name="SamuraiT">Infantry</string>
+    
+    <string name="MangudaiD">Mongol unique unit. Cavalry archer with attack bonus vs. siege weapons.</string>
+    <string name="MangudaiC">Mongols</string>
+    <string name="MangudaiT">Archer, Cavalry</string>
+
+    <string name="WarElephantD">Persian unique unit. Slow, powerful, strong, and well-armored cavalry.</string>
+    <string name="WarElephantC">Persians</string>
+    <string name="WarElephantT">Cavalry</string>
+
+    <string name="MamelukeD">Saracen unique unit. Camel with hand-to-hand attack at distance. Excels vs. other mounted units.</string>
+    <string name="MamelukeC">Saracens</string>
+    <string name="MamelukeT">Cavalry</string>
+    
+    <string name="TeutKnightD">Teutonic unique unit. Infantry with effective armor and slow but powerful attack.</string>
+    <string name="TeutKnightC">Teutons</string>
+    <string name="TeutKnightT">Infantry</string>
+    
+    <string name="JanissaryD">Turkish unique unit. Hand Cannoneer with longer range and no minimum range. Powerful close attack, but inaccurate at range.</string>
+    <string name="JanissaryC">Turks</string>
+    <string name="JanissaryT">Gunpowder</string>
+
+    <string name="BerserkD">Viking unique unit. Infantry that slowly heals itself.</string>
+    <string name="BerserkC">Vikings</string>
+    <string name="BerserkT">Infantry</string>
+
+    <string name="LongboatD">Viking unique unit. Fires multiple arrows.</string>
+    <string name="LongboatC">Vikings</string>
+    <string name="LongboatT">Naval Vessel</string>
+
+    <string name="JaguarD">Aztec unique unit. Attack bonus vs. other infantry.</string>
+    <string name="JaguarC">Aztecs</string>
+    <string name="JaguarT">Infantry</string>
+    
+    <string name="TarkanD">Hun unique unit. Cavalry with attack bonus vs. buildings.</string>
+    <string name="TarkanC">Huns</string>
+    <string name="TarkanT">Cavalry</string>
+
+    <string name="WarWagonD">Korean unique unit. Heavily armored horse-drawn archer unit.</string>
+    <string name="WarWagonC">Koreans</string>
+    <string name="WarWagonT">Archer, Cavalry</string>
+    
+    <string name="TurtleShipD">Korean unique unit. Slow, ironclad battleship used to destroy other ships at close range.</string>
+    <string name="TurtleShipC">Koreans</string>
+    <string name="TurtleShipT">Naval Vessel, Gunpowder</string>
+    
+    <string name="PlumedArcherD">Mayan unique unit. Strong, fast, well-armored archer with less attack than other archers.</string>
+    <string name="PlumedArcherC">Mayans</string>
+    <string name="PlumedArcherT">Archer</string>
+    
+    <string name="ConquistadorD">Spanish unique unit. Mounted Hand Cannoneer. Powerful close attack, but inaccurate at range.</string>
+    <string name="ConquistadorC">Spanish</string>
+    <string name="ConquistadorT">Cavalry, Gunpowder</string>
+
+    <string name="MissionaryD">Spanish unique unit. Mounted Monk. Converts enemy units and heals friendly units like Monks, but cannot pick up Relics.</string>
+    <string name="MissionaryC">Spanish</string>
+    <string name="MissionaryT">Cavalry, Monk, Healer</string>
+
+
+
+
+
+
+</resources>
