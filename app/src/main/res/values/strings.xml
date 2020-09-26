@@ -7,7 +7,7 @@
     <string name="open">open</string>
     <string name="close">close</string>
     <string name="Disclaimer">"Age of Empires 2: Definitive Edition" © Microsoft Corporation. "AoE2DE Counters" was created under Microsoft\'s "Game Content Usage Rules" using assets from "Age of Empires 2: Definitive Edition", and it is not endorsed by or affiliated with Microsoft.  </string>
-    
+
     <string-array name="Units">
         <item>MilitiaLine</item>
         <item>SpearmanLine</item>
@@ -81,151 +81,146 @@
 
     <!-->Base Units<-->
     <string name="MilitiaLine">Militia Line</string>
-    <string name="MilitiaLineD">Militia Line</string>
-    <string name="MilitiaLineC">Militia Line</string>
-    <string name="MilitiaLineT">Militia Line</string>
+    <string name="MilitiaLineD">Basic infantry swordsman. Cheap and quick to create.</string>
+    <string name="MilitiaLineC">Generic</string>
+    <string name="MilitiaLineT">Infantry</string>
     <string name="MilitiaLineI">Militia</string>
 
     <string name="SpearmanLine">Spearman Line</string>
-    <string name="SpearmanLineD">Spearman Line</string>
-    <string name="SpearmanLineC">Spearman Line</string>
-    <string name="SpearmanLineT">Spearman Line</string>
+    <string name="SpearmanLineD">Medium infantry.</string>
+    <string name="SpearmanLineC">Generic</string>
+    <string name="SpearmanLineT">Infantry</string>
     <string name="SpearmanLineI">Spearman</string>
 
     <string name="EagleLine">Eagle Line</string>
-    <string name="EagleLineD">Eagle Line</string>
-    <string name="EagleLineC">Eagle Line</string>
-    <string name="EagleLineT">Eagle Line</string>
+    <string name="EagleLineD">Fast infantry with extensive sight.</string>
+    <string name="EagleLineC">Aztecs, Incas, Mayans</string>
+    <string name="EagleLineT">Infantry</string>
     <string name="EagleLineI">EagleScout</string>
 
     <string name="ArcherLine">Archer Line</string>
-    <string name="ArcherLineD">Archer Line</string>
-    <string name="ArcherLineC">Archer Line</string>
-    <string name="ArcherLineT">Archer Line</string>
+    <string name="ArcherLineD">Quick and light. Weak at close range; excels at battle from distance.</string>
+    <string name="ArcherLineC">Generic</string>
+    <string name="ArcherLineT">Archer</string>
     <string name="ArcherLineI">Archer</string>
 
     <string name="SkirmisherLine">Skirmisher Line</string>
-    <string name="SkirmisherLineD">Skirmisher Line</string>
-    <string name="SkirmisherLineC">Skirmisher Line</string>
-    <string name="SkirmisherLineT">Skirmisher Line</string>
+    <string name="SkirmisherLineD">Ranged unit equipped with armor vs. archer attacks.</string>
+    <string name="SkirmisherLineC">Generic</string>
+    <string name="SkirmisherLineT">Archer</string>
     <string name="SkirmisherLineI">Skirmisher</string>
 
     <string name="CavalryArcherLine">Cavalry Archer Line</string>
-    <string name="CavalryArcherLineD">Cavalry Archer Line</string>
-    <string name="CavalryArcherLineC">Cavalry Archer Line</string>
-    <string name="CavalryArcherLineT">Cavalry Archer Line</string>
+    <string name="CavalryArcherLineD">Fast, with ranged attack. Ideal for hit-and-run attacks.</string>
+    <string name="CavalryArcherLineC">Generic</string>
+    <string name="CavalryArcherLineT">Cavalry, Archer</string>
     <string name="CavalryArcherLineI">CavalryArcher</string>
 
     <string name="HandCannoneer">Hand Cannoneer</string>
-    <string name="HandCannoneerD">Hand Cannoneer</string>
-    <string name="HandCannoneerC">Hand Cannoneer</string>
-    <string name="HandCannoneerT">Hand Cannoneer</string>
+    <string name="HandCannoneerD">Powerful close attack; inaccurate at range.</string>
+    <string name="HandCannoneerC">Generic</string>
+    <string name="HandCannoneerT">Gunpowder</string>
     <string name="HandCannoneerI">HandCannoneer</string>
 
     <string name="ScoutLine">Scout Line</string>
-    <string name="ScoutLineD">Scout Line</string>
-    <string name="ScoutLineC">Scout Line</string>
-    <string name="ScoutLineT">Scout Line</string>
+    <string name="ScoutLineD">Fast with extensive line of sight.</string>
+    <string name="ScoutLineC">Generic</string>
+    <string name="ScoutLineT">Cavalry</string>
     <string name="ScoutLineI">ScoutCavalry</string>
 
 
     <string name="KnightLine">Knight Line</string>
-    <string name="KnightLineD">Knight Line</string>
-    <string name="KnightLineC">Knight Line</string>
-    <string name="KnightLineT">Knight Line</string>
+    <string name="KnightLineD">Fast and heavy cavalry.</string>
+    <string name="KnightLineC">Generic</string>
+    <string name="KnightLineT">Cavalry</string>
     <string name="KnightLineI">Knight</string>
 
     <string name="CamelLine">Camel Line</string>
-    <string name="CamelLineD">Camel Line</string>
-    <string name="CamelLineC">Camel Line</string>
-    <string name="CamelLineT">Camel Line</string>
+    <string name="CamelLineD">Excels at killing other mounted units.</string>
+    <string name="CamelLineC">Generic</string>
+    <string name="CamelLineT">Cavalry</string>
     <string name="CamelLineI">CamelRider</string>
 
 
     <string name="BattleElephantLine">Battle Elephant Line</string>
-    <string name="BattleElephantLineD">Battle Elephant Line</string>
-    <string name="BattleElephantLineC">Battle Elephant Line</string>
-    <string name="BattleElephantLineT">Battle Elephant Line</string>
+    <string name="BattleElephantLineD">Slow and heavy cavalry.</string>
+    <string name="BattleElephantLineC">Burmese, Khmer, Malay, Vietnamese</string>
+    <string name="BattleElephantLineT">Cavalry</string>
     <string name="BattleElephantLineI">BattleElephant</string>
 
     <string name="RamLine">Battering Ram Line</string>
-    <string name="RamLineD">Battering Ram Line</string>
-    <string name="RamLineC">Battering Ram Line</string>
-    <string name="RamLineT">Battering Ram Line</string>
+    <string name="RamLineD">Slow, lumbering siege weapon used to reduce enemy towns to ruins.</string>
+    <string name="RamLineC">Generic</string>
+    <string name="RamLineT">Siege</string>
     <string name="RamLineI">BatteringRam</string>
 
 
     <string name="MangonelLine">Mangonel Line</string>
-    <string name="MangonelLineD">Mangonel Line</string>
-    <string name="MangonelLineC">Mangonel Line</string>
-    <string name="MangonelLineT">Mangonel Line</string>
+    <string name="MangonelLineD">Wheeled siege weapon used to attack a small mass of units.</string>
+    <string name="MangonelLineC">Generic</string>
+    <string name="MangonelLineT">Siege</string>
     <string name="MangonelLineI">Mangonel</string>
 
     <string name="ScorpionLine">Scorpion Line</string>
-    <string name="ScorpionLineD">Scorpion Line</string>
-    <string name="ScorpionLineC">Scorpion Line</string>
-    <string name="ScorpionLineT">Scorpion Line</string>
+    <string name="ScorpionLineD">Light artillery that fires large arrowlike bolts.</string>
+    <string name="ScorpionLineC">Generic</string>
+    <string name="ScorpionLineT">Siege</string>
     <string name="ScorpionLineI">Scorpion</string>
 
 
     <string name="BombardCannon">Bombard Cannon</string>
-    <string name="BombardCannonD">Bombard Cannon</string>
-    <string name="BombardCannonC">Bombard Cannon</string>
-    <string name="BombardCannonT">Bombard Cannon</string>
+    <string name="BombardCannonD">Powerful mobile anti-building siege weapon.</string>
+    <string name="BombardCannonC">Generic</string>
+    <string name="BombardCannonT">Siege, Gunpowder</string>
     <string name="BombardCannonI">BombardCannon</string>
 
     <string name="SiegeTower">Siege Tower</string>
-    <string name="SiegeTowerD">Siege Tower</string>
-    <string name="SiegeTowerC">Siege Tower</string>
-    <string name="SiegeTowerT">Siege Tower</string>
+    <string name="SiegeTowerD">Siege weapon used to scale enemy walls; resistant to archer attack.</string>
+    <string name="SiegeTowerC">Generic</string>
+    <string name="SiegeTowerT">Siege</string>
     <string name="SiegeTowerI">SiegeTower</string>
 
     <string name="Monk">Monk</string>
-    <string name="MonkD">Monk</string>
-    <string name="MonkC">Monk</string>
-    <string name="MonkT">Monk</string>
+    <string name="MonkD">Slow and weak. Converts enemy units, ships to your civilization (player color). Heals wounded villagers, military units (except siege weapons).</string>
+    <string name="MonkC">Generic</string>
+    <string name="MonkT">Monk, Healer</string>
     <string name="MonkI">Monk</string>
 
     <string name="Petard">Petard</string>
-    <string name="PetardD">Petard</string>
-    <string name="PetardC">Petard</string>
-    <string name="PetardT">Petard</string>
+    <string name="PetardD">Demolition infantry unit armed with explosives. Devastating vs. buildings, ineffective vs. other units. Self-destructs when used.</string>
+    <string name="PetardC">Generic</string>
+    <string name="PetardT">Siege, Suicide</string>
     <string name="PetardI">Petard</string>
 
     <string name="Trebuchet">Trebuchet</string>
-    <string name="TrebuchetD">Trebuchet</string>
-    <string name="TrebuchetC">Trebuchet</string>
-    <string name="TrebuchetT">Trebuchet</string>
+    <string name="TrebuchetD">Powerful siege weapon used to destroy buildings, walls from long distance.</string>
+    <string name="TrebuchetC">Generic</string>
+    <string name="TrebuchetT">Siege</string>
     <string name="TrebuchetI">Trebuchet</string>
 
     <string name="GalleyLine">Galley Line</string>
-    <string name="GalleyLineD">Galley Line</string>
-    <string name="GalleyLineC">Galley Line</string>
-    <string name="GalleyLineT">Galley Line</string>
+    <string name="GalleyLineD">Small, fast ship with weak attack.</string>
+    <string name="GalleyLineC">Generic</string>
+    <string name="GalleyLineT">Naval Vessel</string>
     <string name="GalleyLineI">Galley</string>
 
     <string name="FireGalleyLine">Fire Galley Line</string>
-    <string name="FireGalleyLineD">Fire Galley Line</string>
-    <string name="FireGalleyLineC">Fire Galley Line</string>
-    <string name="FireGalleyLineT">Fire Galley Line</string>
+    <string name="FireGalleyLineD">Spews fire at other ships. Good at sinking Galleys.</string>
+    <string name="FireGalleyLineC">Generic</string>
+    <string name="FireGalleyLineT">Naval Vessel</string>
     <string name="FireGalleyLineI">FireGalley</string>
 
     <string name="DemolitionShipLine">Demolition Ship Line</string>
-    <string name="DemolitionShipLineD">Demolition Ship Line</string>
-    <string name="DemolitionShipLineC">Demolition Ship Line</string>
-    <string name="DemolitionShipLineT">Demolition Ship Line</string>
+    <string name="DemolitionShipLineD">Filled with explosives. Self-destructs when used.</string>
+    <string name="DemolitionShipLineC">Generic</string>
+    <string name="DemolitionShipLineT">Naval Vessel, Suicide</string>
     <string name="DemolitionShipLineI">DemolitionRaft</string>
 
     <string name="CannonGalleonLine">Cannon Galleon Line</string>
-    <string name="CannonGalleonLineD">Cannon Galleon Line</string>
-    <string name="CannonGalleonLineC">Cannon Galleon Line</string>
-    <string name="CannonGalleonLineT">Cannon Galleon Line</string>
+    <string name="CannonGalleonLineD">Long-range warship used to attack targets on shore to establish beachhead.</string>
+    <string name="CannonGalleonLineC">Generic</string>
+    <string name="CannonGalleonLineT">Naval Vessel, Gunpowder</string>
     <string name="CannonGalleonLineI">CannonGalleon</string>
-
-
-
-
-
 
 
     <!-->Unique Units here<-->
@@ -387,7 +382,7 @@
     <string name="GenoeseCrossbowmanD">Italian unique unit. Anti cavalry archery unit.</string>
     <string name="GenoeseCrossbowmanC">Italians</string>
     <string name="GenoeseCrossbowmanT">Archer</string>
-    
+
     <string name="Condottiero">Condottiero</string>
     <string name="CondottieroI">Condottiero</string>
     <string name="CondottieroD">Italian mercenary unit. Quick infantry.</string>
@@ -405,7 +400,7 @@
     <string name="BoyarD">Slavic Unique Unit. Heavily armored cavalry; resistant to melee attack.</string>
     <string name="BoyarC">Slavs</string>
     <string name="BoyarT">Cavalry</string>
-    
+
     <string name="CamelArcher">Camel Archer</string>
     <string name="CamelArcherI">CamelArcher</string>
     <string name="CamelArcherD">Berber unique unit. Cavalry archer with an attack bonus vs. cavalry archers.</string>
@@ -429,7 +424,7 @@
     <string name="GbetoD">Malian unique unit. Quick infantry unit with a high ranged attack.</string>
     <string name="GbetoC">Malians</string>
     <string name="GbetoT">Infantry</string>
-    
+
     <string name="OrganGun">Organ Gun</string>
     <string name="OrganGunI">OrganGun</string>
     <string name="OrganGunD">Portuguese unique unit. Siege weapon that fires a volley of bullets. Very effective against large groups of units.</string>
@@ -489,7 +484,7 @@
     <string name="LeitisD">Lithuanian unique cavalry unit with attack that ignores armor.</string>
     <string name="LeitisC">Lithuanians</string>
     <string name="LeitisT">Cavalry</string>
-    
+
     <string name="Keshik">Keshik</string>
     <string name="KeshikI">Keshik</string>
     <string name="KeshikD">Tatar unique cavalry unit that generates gold when fighting other units.</string>
@@ -501,17 +496,6 @@
     <string name="FlamingCamelD">Incendiary camel loaded with flammable hay and brush. Strong vs. mounted units, especially elephants. Weak vs. archers and infantry. Self-destructs when used.</string>
     <string name="FlamingCamelC">Tatars</string>
     <string name="FlamingCamelT">Suicide</string>
-
-
-
-
-
-
-
-
-
-
-
 
 
 </resources>

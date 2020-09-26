@@ -9,7 +9,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
-        android:id="@+id/image_layout"
+        android:id="@+id/unit_info_card"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="horizontal">
@@ -23,7 +23,7 @@
 
         <LinearLayout
             android:id="@+id/text_layout"
-            android:layout_width="256dp"
+            android:layout_width="245dp"
             android:layout_height="150dp"
             android:orientation="vertical"
             android:padding="16dp">
@@ -50,6 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
                 android:text="@string/supporting_text"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="?android:attr/textColorSecondary" />

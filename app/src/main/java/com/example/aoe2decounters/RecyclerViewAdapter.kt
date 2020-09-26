@@ -1,6 +1,7 @@
 package com.example.aoe2decounters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -51,6 +52,14 @@ class RecyclerViewAdapter(private val context: Context, private val unitsList: M
             }
             holder.text_layout.requestLayout()
             true
+        }
+        holder.cardView.setOnClickListener {
+            var intent = Intent(context, UnitViewActivity::class.java)
+            intent.putExtra("EXTRA_UNIT_NAME", currentItem.unit_name)
+            intent.putExtra("EXTRA_UNIT_CIV", currentItem.unit_civ)
+            intent.putExtra("EXTRA_UNIT_DESCRIPTION", currentItem.unit_description)
+            intent.putExtra("EXTRA_UNIT_IMAGE", currentItem.unit_image)
+            context.startActivity(intent)
         }
     }
 
