@@ -26,6 +26,8 @@ class UnitViewActivity : AppCompatActivity() {
         var unit_description = intent.extras?.get("EXTRA_UNIT_DESCRIPTION")
         var unit_image = intent.extras?.get("EXTRA_UNIT_IMAGE")
 
+        var unit_counters = resources.getStringArray(resources.getIdentifier((unit_name.toString() + "Counters").replace("\\s".toRegex(),""), "array", this.packageName))
+
         var title = findViewById<TextView>(R.id.unit_name)
         var description = findViewById<TextView>(R.id.unit_description)
         var civ = findViewById<TextView>(R.id.unit_civ)
@@ -40,6 +42,24 @@ class UnitViewActivity : AppCompatActivity() {
 
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+        var counter_name: String
+        var counter_des: String
+        var counter_civ: String
+        var counter_type: String
+        var counter_image: String
+        for (counterUnit in unit_counters){
+            Log.d("Ident", counterUnit)
+            counter_name = getString(resources.getIdentifier(counterUnit.toString(), "string", this.packageName))
+            counter_des = getString(resources.getIdentifier(counterUnit.toString() + "D", "string", this.packageName))
+            counter_civ = getString(resources.getIdentifier(counterUnit.toString() + "C", "string", this.packageName))
+            counter_type = getString(resources.getIdentifier(counterUnit.toString() + "T", "string", this.packageName))
+            counter_image = getString(resources.getIdentifier(counterUnit.toString() + "I", "string", this.packageName))
+
+            unitsList.add(Unit(counter_name, counter_civ, counter_type, counter_des, counter_image))
+//            Log.d("UnitsArray", ": $unit_name, " + R.string.Arambai)
+        }
+
 
         recyclerViewManager = LinearLayoutManager(this)
         recyclerViewAdapter = RecyclerViewAdapter(this, unitsList = unitsList)

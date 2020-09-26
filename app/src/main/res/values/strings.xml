@@ -42,7 +42,7 @@
         <item>Mangudai</item>
         <item>WarElephant</item>
         <item>Mameluke</item>
-        <item>TeutKnight</item>
+        <item>TeutonicKnight</item>
         <item>Janissary</item>
         <item>Berserk</item>
         <item>Longboat</item>
@@ -85,6 +85,19 @@
     <string name="MilitiaLineC">Generic</string>
     <string name="MilitiaLineT">Infantry</string>
     <string name="MilitiaLineI">Militia</string>
+    <string-array name="MilitiaLineCounters">
+        <item>ArcherLine</item>
+        <item>ScorpionLine</item>
+        <item>CavalryArcherLine</item>
+        <item>HandCannoneer</item>
+        <item>Cataphract</item>
+        <item>Jaguar</item>
+        <item>Boyar</item>
+        <item>Conquistador</item>
+        <item>Janissary</item>
+        <item>Slinger</item>
+        <item>TeutonicKnight</item>
+    </string-array>
 
     <string name="SpearmanLine">Spearman Line</string>
     <string name="SpearmanLineD">Medium infantry.</string>
@@ -287,11 +300,11 @@
     <string name="MamelukeC">Saracens</string>
     <string name="MamelukeT">Cavalry</string>
 
-    <string name="TeutKnight">Teutonic Knight</string>
-    <string name="TeutKnightI">TeutonicKnight</string>
-    <string name="TeutKnightD">Teutonic unique unit. Infantry with effective armor and slow but powerful attack.</string>
-    <string name="TeutKnightC">Teutons</string>
-    <string name="TeutKnightT">Infantry</string>
+    <string name="TeutonicKnight">Teutonic Knight</string>
+    <string name="TeutonicKnightI">TeutonicKnight</string>
+    <string name="TeutonicKnightD">Teutonic unique unit. Infantry with effective armor and slow but powerful attack.</string>
+    <string name="TeutonicKnightC">Teutons</string>
+    <string name="TeutonicKnightT">Infantry</string>
 
     <string name="Janissary">Janissary</string>
     <string name="JanissaryI">Janissary</string>
