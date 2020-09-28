@@ -5,12 +5,12 @@
         android:id="@+id/drawer_menu_home"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Home" />
-
     <item
         android:id="@+id/drawer_menu_about"
         android:icon="@drawable/ic_baseline_book_24"
         android:title="About"/>
 
+    <group android:id="@+id/feedback">
     <item
         android:id="@+id/drawer_menu_feedback"
         android:icon="@drawable/ic_baseline_alternate_email_24"
@@ -20,7 +20,7 @@
         android:id="@+id/drawer_menu_rate"
         android:icon="@drawable/ic_baseline_star_24"
         android:title="Rate Us"/>
-
+    </group>
     <item
         android:id="@+id/drawer_menu_wololo"
         android:icon="@drawable/ic_launcher_background"

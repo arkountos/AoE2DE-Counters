@@ -12,23 +12,23 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import java.util.*
 
 
-class RecyclerViewAdapter(private val context: Context, private val unitsList: MutableList<Unit>) : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>(), Filterable  {
+class CountersRecyclerViewAdapter(private val context: Context, private val unitsList: MutableList<Unit>) : RecyclerView.Adapter<CountersRecyclerViewAdapter.MyViewHolder>(), Filterable  {
     private var unitsListFull: MutableList<Unit> = unitsList.toMutableList()
 
     class MyViewHolder(itemView: View) : ViewHolder(itemView) {
         var unit_image: ImageView = itemView.findViewById(R.id.app_icon)
         var unit_name: TextView = itemView.findViewById(R.id.unit_name)
         var unit_civ: TextView = itemView.findViewById(R.id.unit_civ)
-        var unit_description: TextView = itemView.findViewById(R.id.unit_description)
+//        var unit_description: TextView = itemView.findViewById(R.id.unit_description)
         var unit_civ_image: ImageView = itemView.findViewById(R.id.unit_civ_image)
-        var cardView: CardView = itemView.findViewById(R.id.card)
-        var text_layout: LinearLayout = itemView.findViewById(R.id.text_layout)
-
+//        var cardView: CardView = itemView.findViewById(R.id.card)
+//        var text_layout: LinearLayout = itemView.findViewById(R.id.text_layout)
+//
 
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val v: View = LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_item, parent, false)
+        val v: View = LayoutInflater.from(parent.context).inflate(R.layout.counters_recyclerview_item, parent, false)
         return MyViewHolder(v)
     }
 
@@ -36,31 +36,31 @@ class RecyclerViewAdapter(private val context: Context, private val unitsList: M
         var currentItem = unitsList[position]
         holder.unit_name.text = currentItem.unit_name
         holder.unit_civ.text = currentItem.unit_civ
-        holder.unit_description.text = currentItem.unit_description
+//        holder.unit_description.text = currentItem.unit_description
 
         holder.unit_image.setImageResource(context.resources.getIdentifier(currentItem.unit_image, "drawable", context.packageName))
 
         holder.unit_civ_image.setImageResource(context.resources.getIdentifier(currentItem.unit_civ.toLowerCase(), "drawable", context.packageName))
-        holder.cardView.setOnLongClickListener {
-            if (holder.text_layout.layoutParams.height != RecyclerView.LayoutParams.WRAP_CONTENT) {
-                holder.text_layout.layoutParams.height = RecyclerView.LayoutParams.WRAP_CONTENT
-                Toast.makeText(context, "OK", Toast.LENGTH_SHORT).show()
-            }
-            else{
-                var scale: Float = context.resources.displayMetrics.density;
-                holder.text_layout.layoutParams.height = (150 * scale).toInt()
-            }
-            holder.text_layout.requestLayout()
-            true
-        }
-        holder.cardView.setOnClickListener {
-            var intent = Intent(context, UnitViewActivity::class.java)
-            intent.putExtra("EXTRA_UNIT_NAME", currentItem.unit_name)
-            intent.putExtra("EXTRA_UNIT_CIV", currentItem.unit_civ)
-            intent.putExtra("EXTRA_UNIT_DESCRIPTION", currentItem.unit_description)
-            intent.putExtra("EXTRA_UNIT_IMAGE", currentItem.unit_image)
-            context.startActivity(intent)
-        }
+//        holder.cardView.setOnLongClickListener {
+//            if (holder.text_layout.layoutParams.height != RecyclerView.LayoutParams.WRAP_CONTENT) {
+//                holder.text_layout.layoutParams.height = RecyclerView.LayoutParams.WRAP_CONTENT
+//                Toast.makeText(context, "OK", Toast.LENGTH_SHORT).show()
+//            }
+//            else{
+//                var scale: Float = context.resources.displayMetrics.density;
+//                holder.text_layout.layoutParams.height = (150 * scale).toInt()
+//            }
+//            holder.text_layout.requestLayout()
+//            true
+//        }
+//        holder.cardView.setOnClickListener {
+//            var intent = Intent(context, UnitViewActivity::class.java)
+//            intent.putExtra("EXTRA_UNIT_NAME", currentItem.unit_name)
+//            intent.putExtra("EXTRA_UNIT_CIV", currentItem.unit_civ)
+//            intent.putExtra("EXTRA_UNIT_DESCRIPTION", currentItem.unit_description)
+//            intent.putExtra("EXTRA_UNIT_IMAGE", currentItem.unit_image)
+//            context.startActivity(intent)
+//        }
     }
 
     override fun getItemCount(): Int {

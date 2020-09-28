@@ -13,11 +13,15 @@ import android.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -36,6 +40,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // FORCE DARK MODE BECAUSE YOU ARE COOL
+        AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -73,6 +80,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 //        unitsList.add(Unit("Cataphract", R.string.CataphractDes.toString(), arrayOf()))
 //        unitsList.add(Unit("Spearman", counters_input = arrayOf("Archer Line", "Militia Line"), unit_info_input = "General Unit"))
 //        unitsList.add(Unit("Paladin", "General Unit", arrayOf("Spearman")))
+
+        Collections.sort(unitsList, UnitNameComparator())
 
         recyclerViewManager = LinearLayoutManager(this)
         recyclerViewAdapter = RecyclerViewAdapter(this, unitsList)

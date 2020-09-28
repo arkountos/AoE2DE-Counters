@@ -11,3 +11,9 @@ class Unit (private val unit_name_input: String, private val unit_civ_input: Str
 
 
 }
+
+class UnitNameComparator : Comparator<Unit?> {
+    override fun compare(o1: Unit?, o2: Unit?): Int {
+        return o1!!.unit_name!!.compareTo(o2!!.unit_name)
+    }
+}

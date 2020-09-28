@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 class UnitViewActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var recyclerViewAdapter: RecyclerViewAdapter
+    private lateinit var recyclerViewAdapter: CountersRecyclerViewAdapter
     private lateinit var recyclerViewManager: RecyclerView.LayoutManager
     private var unitsList: MutableList<Unit> = ArrayList()
 
@@ -31,7 +31,7 @@ class UnitViewActivity : AppCompatActivity() {
         var title = findViewById<TextView>(R.id.unit_name)
         var description = findViewById<TextView>(R.id.unit_description)
         var civ = findViewById<TextView>(R.id.unit_civ)
-        var image = findViewById<ImageView>(R.id.unit_image)
+        var image = findViewById<ImageView>(R.id.app_icon)
 
         Log.d("Check", unit_name.toString())
 
@@ -62,7 +62,7 @@ class UnitViewActivity : AppCompatActivity() {
 
 
         recyclerViewManager = LinearLayoutManager(this)
-        recyclerViewAdapter = RecyclerViewAdapter(this, unitsList = unitsList)
+        recyclerViewAdapter = CountersRecyclerViewAdapter(this, unitsList = unitsList)
 
         recyclerView = findViewById<RecyclerView>(R.id.counters_recyclerview).apply {
             setHasFixedSize(true)
