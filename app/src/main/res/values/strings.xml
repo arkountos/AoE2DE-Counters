@@ -20,7 +20,7 @@
         <item>KnightLine</item>
         <item>CamelLine</item>
         <item>BattleElephantLine</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>MangonelLine</item>
         <item>ScorpionLine</item>
         <item>BombardCannon</item>
@@ -118,7 +118,7 @@
 
     <string name="EagleLine">Eagle Line</string>
     <string name="EagleLineD">Fast infantry with extensive sight.</string>
-    <string name="EagleLineC">Aztecs, Incas, Mayans</string>
+    <string name="EagleLineC">Generic</string>
     <string name="EagleLineT">Infantry</string>
     <string name="EagleLineI">EagleScout</string>
     <string-array name="EagleLineCounters">
@@ -146,7 +146,7 @@
         <item>SkirmisherLine</item>
         <item>ScorpionLine</item>
         <item>MangonelLine</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>KnightLine</item>
         <item>Huskarl</item>
         <item>ScoutLine</item>
@@ -172,7 +172,7 @@
         <item>KnightLine</item>
         <item>CamelLine</item>
         <item>BattleElephantLine</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>MangonelLine</item>
         <item>ScorpionLine</item>
         <item>Cataphract</item>
@@ -314,12 +314,12 @@
         <item>CavalryArcherLine</item>
     </string-array>
 
-    <string name="RamLine">Battering Ram Line</string>
-    <string name="RamLineD">Slow, lumbering siege weapon used to reduce enemy towns to ruins.</string>
-    <string name="RamLineC">Generic</string>
-    <string name="RamLineT">Siege</string>
-    <string name="RamLineI">BatteringRam</string>
-    <string-array name="RamLineCounters">
+    <string name="BatteringRamLine">Battering Ram Line</string>
+    <string name="BatteringRamLineD">Slow, lumbering siege weapon used to reduce enemy towns to ruins.</string>
+    <string name="BatteringRamLineC">Generic</string>
+    <string name="BatteringRamLineT">Siege</string>
+    <string name="BatteringRamLineI">BatteringRam</string>
+    <string-array name="BatteringRamLineCounters">
         <item>MilitiaLine</item>
         <item>EagleLine</item>
         <item>ScoutLine</item>
@@ -487,7 +487,7 @@
         <item>BombardCannon</item>
         <item>Petard</item>
         <item>Trebuchet</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>MangonelLine</item>
         <item>Cataphract</item>
         <item>WoadRaider</item>
@@ -557,7 +557,7 @@
     <string-array name="LongbowmanCounters">
         <item>SkirmisherLine</item>
         <item>MangonelLine</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>Genitour</item>
         <item>Huskarl</item>
     </string-array>
@@ -603,7 +603,7 @@
         <item>EagleLine</item>
         <item>SkirmisherLine</item>
         <item>ScorpionLine</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>MangonelLine</item>
         <item>Genitour</item>
         <item>Huskarl</item>
@@ -846,7 +846,7 @@
         <item>SkirmisherLine</item>
         <item>ScorpionLine</item>
         <item>MangonelLine</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>Huskarl</item>
         <item>WarWagon</item>
         <item>RattanArcher</item>
@@ -1132,7 +1132,7 @@
         <item>CamelLine</item>
         <item>BombardCannon</item>
         <item>MangonelLine</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>Huskarl</item>
         <item>Kamayuk</item>
         <item>Samurai</item>
@@ -1173,7 +1173,7 @@
         <item>BombardCannon</item>
         <item>MangonelLine</item>
         <item>ScorpionLine</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>Huskarl</item>
     </string-array>
 
@@ -1190,7 +1190,7 @@
         <item>KnightLine</item>
         <item>CamelLine</item>
         <item>BattleElephantLine</item>
-        <item>RamLine</item>
+        <item>BatteringRamLine</item>
         <item>MangonelLine</item>
         <item>ScorpionLine</item>
         <item>Cataphract</item>
