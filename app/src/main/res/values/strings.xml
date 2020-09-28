@@ -122,7 +122,7 @@
     <string name="EagleLineT">Infantry</string>
     <string name="EagleLineI">EagleScout</string>
     <string-array name="EagleLineCounters">
-        <item>MilitiaMilitiaLine</item>
+        <item>MilitiaLine</item>
         <item>HandCannoneer</item>
         <item>Cataphract</item>
         <item>Boyar</item>
@@ -135,7 +135,6 @@
         <item>Huskarl</item>
         <item>ThrowingAxeman</item>
         <item>WoadRaider</item>
-        <item></item>
     </string-array>
 
     <string name="ArcherLine">Archer Line</string>
@@ -144,7 +143,7 @@
     <string name="ArcherLineT">Archer</string>
     <string name="ArcherLineI">Archer</string>
     <string-array name="ArcherLineCounters">
-        <item>Skirmisher</item>
+        <item>SkirmisherLine</item>
         <item>ScorpionLine</item>
         <item>MangonelLine</item>
         <item>RamLine</item>
@@ -232,8 +231,8 @@
         <item>MangonelLine</item>
         <item>KnightLine</item>
         <item>Huskarl</item>
-        <item>Condottieri</item>
-        <item>PlummedArcher</item>
+        <item>Condottiero</item>
+        <item>PlumedArcher</item>
         <item>RattanArcher</item>
     </string-array>
 
@@ -362,9 +361,8 @@
         <item>EagleLine</item>
         <item>Monk</item>
         <item>KnightLine</item>
-        <item>CamerLine</item>
+        <item>CamelLine</item>
         <item>ScoutLine</item>
-        <item>SteppeLancer</item>
         <item>BombardCannon</item>
         <item>Cataphract</item>
         <item>Mangudai</item>
@@ -386,7 +384,7 @@
     <string-array name="ScorpionLineCounters">
         <item>EagleLine</item>
         <item>KnightLine</item>
-        <item>CamerLine</item>
+        <item>CamelLine</item>
         <item>ScoutLine</item>
         <item>BombardCannon</item>
         <item>MangonelLine</item>
@@ -410,9 +408,8 @@
     <string-array name="BombardCannonCounters">
         <item>EagleLine</item>
         <item>KnightLine</item>
-        <item>CamerLine</item>
+        <item>CamelLine</item>
         <item>ScoutLine</item>
-        <item>SteppeLancer</item>
         <item>BombardCannon</item>
         <item>Cataphract</item>
         <item>Mangudai</item>
@@ -432,9 +429,8 @@
     <string-array name="SiegeTowerCounters">
         <item>EagleLine</item>
         <item>KnightLine</item>
-        <item>CamerLine</item>
+        <item>CamelLine</item>
         <item>ScoutLine</item>
-        <item>SteppeLancer</item>
         <item>Konnik</item>
         <item>Cataphract</item>
         <item>Mangudai</item>
@@ -483,10 +479,10 @@
     <string name="TrebuchetC">Generic</string>
     <string name="TrebuchetT">Siege</string>
     <string name="TrebuchetI">Trebuchet</string>
-    <string-array name="TrebuchetLine">
+    <string-array name="TrebuchetCounters">
         <item>EagleLine</item>
         <item>KnightLine</item>
-        <item>CamerLine</item>
+        <item>CamelLine</item>
         <item>ScoutLine</item>
         <item>BombardCannon</item>
         <item>Petard</item>
@@ -584,7 +580,7 @@
     <string name="WoadRaiderD">Celtic unique unit. Exceptionally quick infantry.</string>
     <string name="WoadRaiderC">Celts</string>
     <string name="WoadRaiderT">Infantry</string>
-    <string-array name="WoadRaiderLine">
+    <string-array name="WoadRaiderCounters">
         <item>HandCannoneer</item>
         <item>Jaguar</item>
         <item>Slinger</item>
@@ -601,7 +597,7 @@
     <string name="ChuKoNuD">Chinese unique unit. Archer with mediocre range. Fires large number of arrows very quickly.</string>
     <string name="ChuKoNuC">Chinese</string>
     <string name="ChuKoNuT">Archer</string>
-    <string-array name="ChiKoNuCounters">
+    <string-array name="ChuKoNuCounters">
         <item>KnightLine</item>
         <item>ScoutLine</item>
         <item>EagleLine</item>
@@ -627,7 +623,7 @@
         <item>Samurai</item>
         <item>Boyar</item>
         <item>Conquistador</item>
-        <item>TeutonicLine</item>
+        <item>TeutonicKnight</item>
         <item>Janissary</item>
         <item>Berserk</item>
     </string-array>
@@ -732,204 +728,556 @@
     <string name="JanissaryD">Turkish unique unit. Hand Cannoneer with longer range and no minimum range. Powerful close attack, but inaccurate at range.</string>
     <string name="JanissaryC">Turks</string>
     <string name="JanissaryT">Gunpowder</string>
+    <string-array name="JanissaryCounters">
+        <item>ArcherLine</item>
+        <item>SkirmisherLine</item>
+        <item>ScorpionLine</item>
+        <item>MangonelLine</item>
+        <item>BombardCannon</item>
+        <item>Huskarl</item>
+        <item>Condottiero</item>
+        <item>Samurai</item>
+    </string-array>
 
     <string name="Berserk">Berserk</string>
     <string name="BerserkI">Berserk</string>
     <string name="BerserkD">Viking unique unit. Infantry that slowly heals itself.</string>
     <string name="BerserkC">Vikings</string>
     <string name="BerserkT">Infantry</string>
+    <string-array name="BerserkCounters">
+        <item>HandCannoneer</item>
+        <item>ArcherLine</item>
+        <item>Jaguar</item>
+        <item>Longbowman</item>
+        <item>Cataphract</item>
+        <item>Slinger</item>
+        <item>PlumedArcher</item>
+        <item>Boyar</item>
+        <item>Conquistador</item>
+        <item>TeutonicKnight</item>
+        <item>Janissary</item>
+    </string-array>
 
     <string name="Longboat">Longboat</string>
     <string name="LongboatI">Longboat</string>
     <string name="LongboatD">Viking unique unit. Fires multiple arrows.</string>
     <string name="LongboatC">Vikings</string>
     <string name="LongboatT">Naval Vessel</string>
+    <string-array name="LongboatCounters">
+        <item>BombardCannon</item>
+        <item>MangonelLine</item>
+        <item>FireGalleyLine</item>
+        <item>TurtleShip</item>
+    </string-array>
 
     <string name="Jaguar">Jaguar</string>
     <string name="JaguarI">Jaguar</string>
     <string name="JaguarD">Aztec unique unit. Attack bonus vs. other infantry.</string>
     <string name="JaguarC">Aztecs</string>
     <string name="JaguarT">Infantry</string>
+    <string-array name="JaguarCounters">
+        <item>KnightLine</item>
+        <item>ArcherLine</item>
+        <item>HandCannoneer</item>
+        <item>MangonelLine</item>
+        <item>Cataphract</item>
+        <item>Slinger</item>
+        <item>Gbeto</item>
+        <item>Boyar</item>
+        <item>Conquistador</item>
+        <item>Janissary</item>
+    </string-array>
 
     <string name="Tarkan">Tarkan</string>
     <string name="TarkanI">Tarkan</string>
     <string name="TarkanD">Hun unique unit. Cavalry with attack bonus vs. buildings.</string>
     <string name="TarkanC">Huns</string>
     <string name="TarkanT">Cavalry</string>
+    <string-array name="TarkanCounters">
+        <item>SpearmanLine</item>
+        <item>CamelLine</item>
+        <item>KnightLine</item>
+        <item>GenoeseCrossbowman</item>
+        <item>Mameluke</item>
+    </string-array>
 
     <string name="WarWagon">War Wagon</string>
     <string name="WarWagonI">War Wagon</string>
     <string name="WarWagonD">Korean unique unit. Heavily armored horse-drawn archer unit.</string>
     <string name="WarWagonC">Koreans</string>
     <string name="WarWagonT">Archer, Cavalry</string>
+    <string-array name="WarWagonCounters">
+        <item>SpearmanLine</item>
+        <item>EagleLine</item>
+        <item>SkirmisherLine</item>
+        <item>CamelLine</item>
+        <item>MangonelLine</item>
+        <item>Monk</item>
+        <item>CamelArcher</item>
+        <item>Huskarl</item>
+        <item>Kamayuk</item>
+        <item>GenoeseCrossbowman</item>
+        <item>Samurai</item>
+        <item>Mameluke</item>
+        <item>Missionary</item>
+        <item>Berserk</item>
+    </string-array>
 
     <string name="TurtleShip">Turtle Ship</string>
     <string name="TurtleShipI">TurtleShip</string>
     <string name="TurtleShipD">Korean unique unit. Slow, ironclad battleship used to destroy other ships at close range.</string>
     <string name="TurtleShipC">Koreans</string>
     <string name="TurtleShipT">Naval Vessel, Gunpowder</string>
+    <string-array name="TurtleShipCounters">
+        <item>BombardCannon</item>
+        <item>Trebuchet</item>
+        <item>Monk</item>
+        <item>Condottiero</item>
+        <item>Missionary</item>
+    </string-array>
 
     <string name="PlumedArcher">Plumed Archer</string>
     <string name="PlumedArcherI">PlumedArcher</string>
     <string name="PlumedArcherD">Mayan unique unit. Strong, fast, well-armored archer with less attack than other archers.</string>
     <string name="PlumedArcherC">Mayans</string>
     <string name="PlumedArcherT">Archer</string>
+    <string-array name="PlumedArcherCounters">
+        <item>EagleLine</item>
+        <item>SkirmisherLine</item>
+        <item>ScorpionLine</item>
+        <item>MangonelLine</item>
+        <item>RamLine</item>
+        <item>Huskarl</item>
+        <item>WarWagon</item>
+        <item>RattanArcher</item>
+    </string-array>
 
     <string name="Conquistador">Conquistador</string>
     <string name="ConquistadorI">Conquistador</string>
     <string name="ConquistadorD">Spanish unique unit. Mounted Hand Cannoneer. Powerful close attack, but inaccurate at range.</string>
     <string name="ConquistadorC">Spanish</string>
     <string name="ConquistadorT">Cavalry, Gunpowder</string>
+    <string-array name="ConquistadorCounters">
+        <item>SpearmanLine</item>
+        <item>EagleLine</item>
+        <item>SkirmisherLine</item>
+        <item>KnightLine</item>
+        <item>MangonelLine</item>
+        <item>Huskarl</item>
+        <item>Kamayuk</item>
+        <item>Condottiero</item>
+        <item>GenoeseCrossbowman</item>
+        <item>Samurai</item>
+        <item>Berserk</item>
+    </string-array>
 
     <string name="Missionary">Missionary</string>
     <string name="MissionaryI">Missionary</string>
     <string name="MissionaryD">Spanish unique unit. Mounted Monk. Converts enemy units and heals friendly units like Monks, but cannot pick up Relics.</string>
     <string name="MissionaryC">Spanish</string>
     <string name="MissionaryT">Cavalry, Monk, Healer</string>
+    <string-array name="MissionaryCounters">
+        <item>EagleLine</item>
+        <item>SpearmanLine</item>
+        <item>ArcherLine</item>
+        <item>ScoutLine</item>
+        <item>CamelLine</item>
+        <item>Arambai</item>
+        <item>ShotelWarrior</item>
+    </string-array>
 
     <string name="Kamayuk">Kamayuk</string>
     <string name="KamayukI">Kamayuk</string>
     <string name="KamayukD">Inca unique unit. Infantry unit with attack bonus vs. cavalry. Carries a long spear to infiltrate formations.</string>
     <string name="KamayukC">Incas</string>
     <string name="KamayukT">Infantry</string>
+    <string-array name="KamayukCounters">
+        <item>ScorpionLine</item>
+        <item>MangonelLine</item>
+        <item>Monk</item>
+        <item>Jaguar</item>
+        <item>Cataphract</item>
+        <item>ThrowingAxeman</item>
+        <item>Slinger</item>
+        <item>Samurai</item>
+        <item>Gbeto</item>
+        <item>PlumedArcher</item>
+        <item>Missionary</item>
+        <item>TeutonicKnight</item>
+    </string-array>
 
     <string name="Slinger">Slinger</string>
     <string name="SlingerI">Slinger</string>
     <string name="SlingerD">Inca unique unit. Ranged unit with attack bonus vs. infantry.</string>
     <string name="SlingerC">Incas</string>
     <string name="SlingerT">Archer</string>
+    <string-array name="SlingerCounters">
+        <item>SkirmisherLine</item>
+        <item>KnightLine</item>
+        <item>CavalryArcherLine</item>
+        <item>MangonelLine</item>
+        <item>RattanArcher</item>
+    </string-array>
 
     <string name="ElephantArcher">Elephant Archer</string>
     <string name="ElephantArcherI">ElephantArcher</string>
     <string name="ElephantArcherD">Indian unique unit. Heavy mounted archer.</string>
     <string name="ElephantArcherC">Indians</string>
     <string name="ElephantArcherT">Cavalry, Archer</string>
+    <string-array name="ElephantArcherCounters">
+        <item>SpearmanLine</item>
+        <item>Monk</item>
+        <item>CamelLine</item>
+        <item>ChuKoNu</item>
+        <item>Kamayuk</item>
+        <item>GenoeseCrossbowman</item>
+        <item>Samurai</item>
+        <item>Mameluke</item>
+        <item>Missionary</item>
+        <item>FlamingCamel</item>
+    </string-array>
 
     <string name="ImperialCamelRider">Imperial Camel Rider</string>
     <string name="ImperialCamelRiderI">ImperialCamelRider</string>
     <string name="ImperialCamelRiderD">Stronger than Heavy Camel. Excels at killing other mounted units.</string>
     <string name="ImperialCamelRiderC">Indians</string>
     <string name="ImperialCamelRiderT">Cavalry</string>
+    <string-array name="ImperialCamelRiderCounters">
+        <item>MilitiaLine</item>
+        <item>SpearmanLine</item>
+        <item>Cataphract</item>
+        <item>Kamayuk</item>
+        <item>GenoeseCrossbowman</item>
+        <item>TeutonicKnight</item>
+        <item>Berserk</item>
+    </string-array>
 
     <string name="GenoeseCrossbowman">Genoese Crossbowman</string>
     <string name="GenoeseCrossbowmanI">GenoeseCrossbowman</string>
     <string name="GenoeseCrossbowmanD">Italian unique unit. Anti cavalry archery unit.</string>
     <string name="GenoeseCrossbowmanC">Italians</string>
     <string name="GenoeseCrossbowmanT">Archer</string>
+    <string-array name="GenoeseCrossbowmanCounters">
+        <item>EagleLine</item>
+        <item>ArcherLine</item>
+        <item>ScorpionLine</item>
+        <item>MangonelLine</item>
+        <item>Huskarl</item>
+        <item>Samurai</item>
+    </string-array>
 
     <string name="Condottiero">Condottiero</string>
     <string name="CondottieroI">Condottiero</string>
     <string name="CondottieroD">Italian mercenary unit. Quick infantry.</string>
     <string name="CondottieroC">Italians</string>
     <string name="CondottieroT">Infantry</string>
+    <string-array name="CondottieroCounters">
+        <item>ArcherLine</item>
+        <item>ScorpionLine</item>
+        <item>Cataphract</item>
+        <item>Samurai</item>
+        <item>Boyar</item>
+        <item>TeutonicKnight</item>
+    </string-array>
 
     <string name="MagyarHuszar">Magyar Huszar</string>
     <string name="MagyarHuszarI">MagyarHuszar</string>
     <string name="MagyarHuszarD">Magyar unique unit. Light cavalry unit with a bonus vs. siege</string>
     <string name="MagyarHuszarC">Magyars</string>
     <string name="MagyarHuszarT">Cavalry</string>
+    <string-array name="MagyarHuszarCounters">
+        <item>SpearmanLine</item>
+        <item>EagleLine</item>
+        <item>CamelLine</item>
+        <item>Kamayuk</item>
+        <item>GenoeseCrossbowman</item>
+        <item>Samurai</item>
+        <item>Mameluke</item>
+        <item>Boyar</item>
+        <item>TeutonicKnight</item>
+        <item>Berserk</item>
+    </string-array>
 
     <string name="Boyar">Boyar</string>
     <string name="BoyarI">Boyar</string>
     <string name="BoyarD">Slavic Unique Unit. Heavily armored cavalry; resistant to melee attack.</string>
     <string name="BoyarC">Slavs</string>
     <string name="BoyarT">Cavalry</string>
+    <string-array name="BoyarCounters">
+        <item>SpearmanLine</item>
+        <item>ArcherLine</item>
+        <item>CamelLine</item>
+        <item>ScorpionLine</item>
+        <item>Monk</item>
+        <item>Kamayuk</item>
+        <item>Samurai</item>
+        <item>WarElephant</item>
+        <item>Mameluke</item>
+        <item>Missionary</item>
+        <item>TeutonicKnight</item>
+        <item>Berserk</item>
+    </string-array>
 
     <string name="CamelArcher">Camel Archer</string>
     <string name="CamelArcherI">CamelArcher</string>
     <string name="CamelArcherD">Berber unique unit. Cavalry archer with an attack bonus vs. cavalry archers.</string>
     <string name="CamelArcherC">Berbers</string>
     <string name="CamelArcherT">Cavalry, Archer</string>
+    <string-array name="CamelArcherCounters">
+        <item>EagleLine</item>
+        <item>SkirmisherLine</item>
+        <item>MangonelLine</item>
+        <item>Huskarl</item>
+    </string-array>
 
     <string name="Genitour">Genitour</string>
     <string name="GenitourI">Genitour</string>
     <string name="GenitourD">Berber unique unit. Mounted Skirmisher.</string>
     <string name="GenitourC">Berbers</string>
     <string name="GenitourT">Cavalry, Archer</string>
+    <string-array name="GenitourCounters">
+        <item>SpearmanLine</item>
+        <item>EagleLine</item>
+        <item>KnightLine</item>
+        <item>BombardCannon</item>
+        <item>MangonelLine</item>
+        <item>Huskarl</item>
+        <item>GenoeseCrossbowman</item>
+    </string-array>
 
     <string name="ShotelWarrior">Shotel Warrior</string>
     <string name="ShotelWarriorI">ShotelWarrior</string>
     <string name="ShotelWarriorD">Ethiopian unique unit. Cheap infantry unit with high creation speed.</string>
     <string name="ShotelWarriorC">Ethiopians</string>
     <string name="ShotelWarriorT">Infantry</string>
+    <string-array name="ShotelWarriorCounters">
+        <item>HandCannoneer</item>
+        <item>CavalryArcherLine</item>
+        <item>ScorpionLine</item>
+        <item>Jaguar</item>
+        <item>Samurai</item>
+        <item>Janissary</item>
+    </string-array>
 
     <string name="Gbeto">Gbeto</string>
     <string name="GbetoI">Gbeto</string>
     <string name="GbetoD">Malian unique unit. Quick infantry unit with a high ranged attack.</string>
     <string name="GbetoC">Malians</string>
     <string name="GbetoT">Infantry</string>
+    <string-array name="GbetoCounters">
+        <item>HandCannoneer</item>
+        <item>ArcherLine</item>
+        <item>KnightLine</item>
+        <item>MangonelLine</item>
+        <item>ScorpionLine</item>
+        <item>Monk</item>
+        <item>Slinger</item>
+        <item>Samurai</item>
+        <item>PlumedArcher</item>
+        <item>Missionary</item>
+        <item>Janissary</item>
+    </string-array>
 
     <string name="OrganGun">Organ Gun</string>
     <string name="OrganGunI">OrganGun</string>
     <string name="OrganGunD">Portuguese unique unit. Siege weapon that fires a volley of bullets. Very effective against large groups of units.</string>
     <string name="OrganGunC">Portuguese</string>
     <string name="OrganGunT">Siege, Gunpowder</string>
+    <string-array name="OrganGunCounters">
+        <item>BombardCannon</item>
+        <item>MangonelLine</item>
+        <item>Huskarl</item>
+        <item>Condottiero</item>
+    </string-array>
 
     <string name="Caravel">Caravel</string>
     <string name="CaravelI">Caravel</string>
     <string name="CaravelD">Portuguese unique unit. Boat effective vs. large fleets because each shot damages multiple units.</string>
     <string name="CaravelC">Portuguese</string>
     <string name="CaravelT">Naval Vessel</string>
+    <string-array name="CaravelCounters">
+        <item>BombardCannon</item>
+        <item>MangonelLine</item>
+        <item>FireGalleyLine</item>
+        <item>TurtleShip</item>
+        <item>Longboat</item>
+    </string-array>
 
     <string name="Arambai">Arambai</string>
     <string name="ArambaiI">Arambai</string>
     <string name="ArambaiD">Burmese unique unit. Mounted dart thrower.</string>
     <string name="ArambaiC">Burmese</string>
     <string name="ArambaiT">Cavalry, Archer</string>
+    <string-array name="ArambaiCounters">
+        <item>SpearmanLine</item>
+        <item>EagleLine</item>
+        <item>SkirmisherLine</item>
+        <item>CamelLine</item>
+        <item>CavalryArcherLine</item>
+        <item>Huskarl</item>
+        <item>Kamayuk</item>
+        <item>GenoeseCrossbowman</item>
+        <item>Samurai</item>
+        <item>Mameluke</item>
+    </string-array>
 
     <string name="BallistaElephant">Ballista Elephant</string>
     <string name="BallistaElephantI">BallistaElephant</string>
     <string name="BallistaElephantD">Khmer unique unit. Heavy cavalry equipped with a Scorpion. Can fell trees.</string>
     <string name="BallistaElephantC">Khmer</string>
     <string name="BallistaElephantT">Cavalry, Siege</string>
+    <string-array name="BallistaElephantCounters">
+        <item>SpearmanLine</item>
+        <item>EagleLine</item>
+        <item>CamelLine</item>
+        <item>BombardCannon</item>
+        <item>MangonelLine</item>
+        <item>RamLine</item>
+        <item>Huskarl</item>
+        <item>Kamayuk</item>
+        <item>Samurai</item>
+        <item>MagyarHuszar</item>
+        <item>Mangudai</item>
+        <item>Mameluke</item>
+        <item>FlamingCamel</item>
+    </string-array>
 
     <string name="KarambitWarrior">Karambit Warrior</string>
     <string name="KarambitWarriorI">KarambitWarrior</string>
     <string name="KarambitWarriorD">Malay unique unit. Cheap and weak infantry unit that only takes half a population spot.</string>
     <string name="KarambitWarriorC">Malay</string>
     <string name="KarambitWarriorT">Infantry</string>
+    <string-array name="KarambitWarriorCounters">
+        <item>MilitiaLine</item>
+        <item>HandCannoneer</item>
+        <item>ArcherLine</item>
+        <item>KnightLine</item>
+        <item>Jaguar</item>
+        <item>Cataphract</item>
+        <item>Slinger</item>
+        <item>Samurai</item>
+        <item>Boyar</item>
+        <item>Conquistador</item>
+        <item>TeutonicKnight</item>
+        <item>Janissary</item>
+        <item>Berserk</item>
+    </string-array>
 
     <string name="RattanArcher">Rattan Archer</string>
     <string name="RattanArcherI">RattanArcher</string>
     <string name="RattanArcherD">Vietnamese unique unit. Heavily armored Archer.</string>
     <string name="RattanArcherC">Vietnamese</string>
     <string name="RattanArcherT">Archer</string>
+    <string-array name="RattanArcherCounters">
+        <item>EagleLine</item>
+        <item>BombardCannon</item>
+        <item>MangonelLine</item>
+        <item>ScorpionLine</item>
+        <item>RamLine</item>
+        <item>Huskarl</item>
+    </string-array>
 
     <string name="ImperialSkirmisher">Imperial Skirmisher</string>
     <string name="ImperialSkirmisherI">ImperialSkirmisher</string>
     <string name="ImperialSkirmisherD">Stronger than Elite Skirmisher. Ranged unit equipped with armor vs. archer attacks.</string>
     <string name="ImperialSkirmisherC">Vietnamese</string>
     <string name="ImperialSkirmisherT">Archer</string>
+    <string-array name="ImperialSkirmisherCounters">
+        <item>MilitiaLine</item>
+        <item>EagleLine</item>
+        <item>ArcherLine</item>
+        <item>ScoutLine</item>
+        <item>KnightLine</item>
+        <item>CamelLine</item>
+        <item>BattleElephantLine</item>
+        <item>RamLine</item>
+        <item>MangonelLine</item>
+        <item>ScorpionLine</item>
+        <item>Cataphract</item>
+        <item>WoadRaider</item>
+        <item>ThrowingAxeman</item>
+        <item>Huskarl</item>
+        <item>Samurai</item>
+        <item>WarElephant</item>
+        <item>TeutonicKnight</item>
+        <item>Berserk</item>
+        <item>Jaguar</item>
+        <item>Tarkan</item>
+        <item>Kamayuk</item>
+        <item>Condottiero</item>
+        <item>MagyarHuszar</item>
+        <item>Boyar</item>
+        <item>ShotelWarrior</item>
+        <item>Gbeto</item>
+        <item>KarambitWarrior</item>
+        <item>Konnik</item>
+        <item>Leitis</item>
+        <item>Keshik</item>
+    </string-array>
 
     <string name="Konnik">Konnik</string>
     <string name="KonnikI">Konnik</string>
     <string name="KonnikD">Bulgarian unique cavalry unit that fights on as infantry when felled.</string>
     <string name="KonnikC">Bulgarians</string>
     <string name="KonnikT">Cavalry, Infantry</string>
+    <string-array name="KonnikCounters">
+        <item>SpearmanLine</item>
+        <item>HandCannoneer</item>
+        <item>ArcherLine</item>
+        <item>CamelLine</item>
+        <item>GenoeseCrossbowman</item>
+        <item>Samurai</item>
+    </string-array>
 
     <string name="Kipchak">Kipchak</string>
     <string name="KipchakI">Kipchak</string>
     <string name="KipchakD">Cuman unique cavalry archer with rapid-fire attack.</string>
     <string name="KipchakC">Cumans</string>
     <string name="KipchakT">Cavalry, Archer</string>
+    <string-array name="KipchakCounters">
+        <item>SkirmisherLine</item>
+        <item>CamelLine</item>
+        <item>MangonelLine</item>
+        <item>CamelLine</item>
+        <item>GenoeseCrossbowman</item>
+    </string-array>
 
     <string name="Leitis">Leitis</string>
     <string name="LeitisI">Leitis</string>
     <string name="LeitisD">Lithuanian unique cavalry unit with attack that ignores armor.</string>
     <string name="LeitisC">Lithuanians</string>
     <string name="LeitisT">Cavalry</string>
+    <string-array name="LeitisCounters">
+        <item>SpearmanLine</item>
+        <item>ArcherLine</item>
+        <item>CamelLine</item>
+        <item>GenoeseCrossbowman</item>
+    </string-array>
 
     <string name="Keshik">Keshik</string>
     <string name="KeshikI">Keshik</string>
     <string name="KeshikD">Tatar unique cavalry unit that generates gold when fighting other units.</string>
     <string name="KeshikC">Tatars</string>
     <string name="KeshikT">Cavalry</string>
+    <string-array name="KeshikCounters">
+        <item>SpearmanLine</item>
+        <item>CamelLine</item>
+    </string-array>
 
     <string name="FlamingCamel">Flaming Camel</string>
     <string name="FlamingCamelI">FlamingCamel</string>
     <string name="FlamingCamelD">Incendiary camel loaded with flammable hay and brush. Strong vs. mounted units, especially elephants. Weak vs. archers and infantry. Self-destructs when used.</string>
     <string name="FlamingCamelC">Tatars</string>
     <string name="FlamingCamelT">Suicide</string>
+    <string-array name="FlamingCamelCounters">
+        <item>ArcherLine</item>
+        <item>CavalryArcherLine</item>
+        <item>Monk</item>
+        <item>ChuKoNu</item>
+        <item>PlumedArcher</item>
+        <item>Missionary</item>
+        <item>RattanArcher</item>
+    </string-array>
 
 
 </resources>
