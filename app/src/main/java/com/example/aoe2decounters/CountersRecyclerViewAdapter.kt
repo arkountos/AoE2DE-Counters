@@ -2,6 +2,7 @@ package com.example.aoe2decounters
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,7 +41,8 @@ class CountersRecyclerViewAdapter(private val context: Context, private val unit
 
         holder.unit_image.setImageResource(context.resources.getIdentifier(currentItem.unit_image, "drawable", context.packageName))
 
-        holder.unit_civ_image.setImageResource(context.resources.getIdentifier(currentItem.unit_civ.toLowerCase(), "drawable", context.packageName))
+        holder.unit_civ_image.setImageResource(context.resources.getIdentifier(currentItem.unit_civ.toLowerCase(Locale.ROOT), "drawable", context.packageName))
+        Log.d("CHECK", "OKKKK")
 //        holder.cardView.setOnLongClickListener {
 //            if (holder.text_layout.layoutParams.height != RecyclerView.LayoutParams.WRAP_CONTENT) {
 //                holder.text_layout.layoutParams.height = RecyclerView.LayoutParams.WRAP_CONTENT

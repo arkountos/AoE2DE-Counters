@@ -1,10 +1,10 @@
 package com.example.aoe2decounters
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -21,6 +21,9 @@ class UnitViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_unit_view)
 
+        toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
         var unit_name = intent.extras?.get("EXTRA_UNIT_NAME")
         var unit_civ = intent.extras?.get("EXTRA_UNIT_CIV")
         var unit_description = intent.extras?.get("EXTRA_UNIT_DESCRIPTION")
@@ -32,6 +35,10 @@ class UnitViewActivity : AppCompatActivity() {
         var description = findViewById<TextView>(R.id.unit_description)
         var civ = findViewById<TextView>(R.id.unit_civ)
         var image = findViewById<ImageView>(R.id.app_icon)
+        var civ_image = findViewById<ImageView>(R.id.unit_civ_image)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
 
         Log.d("Check", unit_name.toString())
 
@@ -39,6 +46,7 @@ class UnitViewActivity : AppCompatActivity() {
         description.text = unit_description.toString()
         civ.text = unit_civ.toString()
         image.setImageResource(this.resources.getIdentifier(unit_image.toString(), "drawable", this.packageName))
+        civ_image.setImageResource(this.resources.getIdentifier(unit_civ.toString().toLowerCase(), "drawable", this.packageName))
 
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -70,5 +78,9 @@ class UnitViewActivity : AppCompatActivity() {
             adapter = recyclerViewAdapter
         }
 
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
