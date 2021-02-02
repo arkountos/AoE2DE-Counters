@@ -2,6 +2,7 @@ package com.arkountos.aoe2counters
 
 import android.content.Context
 import android.content.Intent
+import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,13 +17,13 @@ class RecyclerViewAdapter(private val context: Context, private val unitsList: M
     private var unitsListFull: MutableList<Unit> = unitsList.toMutableList()
 
     class MyViewHolder(itemView: View) : ViewHolder(itemView) {
-        var unit_image: ImageView = itemView.findViewById(R.id.app_icon)
-        var unit_name: TextView = itemView.findViewById(R.id.unit_name)
-        var unit_civ: TextView = itemView.findViewById(R.id.unit_civ)
-        var unit_description: TextView = itemView.findViewById(R.id.unit_description)
-        var unit_civ_image: ImageView = itemView.findViewById(R.id.unit_civ_image)
+        var unitImage: ImageView = itemView.findViewById(R.id.app_icon)
+        var unitName: TextView = itemView.findViewById(R.id.unit_name)
+        var unitCiv: TextView = itemView.findViewById(R.id.unit_civ)
+        var unitDescription: TextView = itemView.findViewById(R.id.unit_description)
+        var unitCivImage: ImageView = itemView.findViewById(R.id.unit_civ_image)
         var cardView: CardView = itemView.findViewById(R.id.card)
-        var text_layout: LinearLayout = itemView.findViewById(R.id.text_layout)
+        var textLayout: LinearLayout = itemView.findViewById(R.id.text_layout)
 
 
 
@@ -33,32 +34,34 @@ class RecyclerViewAdapter(private val context: Context, private val unitsList: M
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        var currentItem = unitsList[position]
-        holder.unit_name.text = currentItem.unit_name
-        holder.unit_civ.text = currentItem.unit_civ
-        holder.unit_description.text = currentItem.unit_description
+        val currentItem = unitsList[position]
+        holder.unitName.text = currentItem.unitName
+        holder.unitCiv.text = currentItem.unitCiv
+        holder.unitDescription.text = currentItem.unitDescription
+        holder.unitDescription.movementMethod = ScrollingMovementMethod()
+        holder.unitImage.setImageResource(context.resources.getIdentifier(currentItem.unitImage, "drawable", context.packageName))
 
-        holder.unit_image.setImageResource(context.resources.getIdentifier(currentItem.unit_image, "drawable", context.packageName))
-
-        holder.unit_civ_image.setImageResource(context.resources.getIdentifier(currentItem.unit_civ.toLowerCase(), "drawable", context.packageName))
-        holder.cardView.setOnLongClickListener {
-            if (holder.text_layout.layoutParams.height != RecyclerView.LayoutParams.WRAP_CONTENT) {
-                holder.text_layout.layoutParams.height = RecyclerView.LayoutParams.WRAP_CONTENT
-                Toast.makeText(context, "OK", Toast.LENGTH_SHORT).show()
-            }
-            else{
-                var scale: Float = context.resources.displayMetrics.density;
-                holder.text_layout.layoutParams.height = (150 * scale).toInt()
-            }
-            holder.text_layout.requestLayout()
-            true
-        }
+        holder.unitCivImage.setImageResource(context.resources.getIdentifier(currentItem.unitCiv.toLowerCase(
+            Locale.ROOT
+        ), "drawable", context.packageName))
+//        holder.cardView.setOnLongClickListener {
+//            if (holder.textLayout.layoutParams.height != RecyclerView.LayoutParams.WRAP_CONTENT) {
+//                holder.textLayout.layoutParams.height = RecyclerView.LayoutParams.WRAP_CONTENT
+//                Toast.makeText(context, "OK", Toast.LENGTH_SHORT).show()
+//            }
+//            else{
+//                val scale: Float = context.resources.displayMetrics.density
+//                holder.textLayout.layoutParams.height = (150 * scale).toInt()
+//            }
+//            holder.textLayout.requestLayout()
+//            true
+//        }
         holder.cardView.setOnClickListener {
-            var intent = Intent(context, UnitViewActivity::class.java)
-            intent.putExtra("EXTRA_UNIT_NAME", currentItem.unit_name)
-            intent.putExtra("EXTRA_UNIT_CIV", currentItem.unit_civ)
-            intent.putExtra("EXTRA_UNIT_DESCRIPTION", currentItem.unit_description)
-            intent.putExtra("EXTRA_UNIT_IMAGE", currentItem.unit_image)
+            val intent = Intent(context, UnitViewActivity::class.java)
+            intent.putExtra("EXTRA_UNIT_NAME", currentItem.unitName)
+            intent.putExtra("EXTRA_UNIT_CIV", currentItem.unitCiv)
+            intent.putExtra("EXTRA_UNIT_DESCRIPTION", currentItem.unitDescription)
+            intent.putExtra("EXTRA_UNIT_IMAGE", currentItem.unitImage)
             context.startActivity(intent)
         }
     }
@@ -70,20 +73,20 @@ class RecyclerViewAdapter(private val context: Context, private val unitsList: M
     override fun getFilter(): Filter {
         return object:Filter(){
             override fun performFiltering(constraint: CharSequence?): FilterResults {
-                var filteredList: MutableList<Unit> = mutableListOf()
+                val filteredList: MutableList<Unit> = mutableListOf()
 
                 if (constraint == null || constraint.isEmpty()){
                     filteredList.addAll(unitsListFull)
                 }
                 else {
                     for (item in unitsListFull){
-                        if (item.unit_name.toLowerCase(Locale.ROOT).contains(constraint.toString().toLowerCase(Locale.ROOT).trim()) || (item.unit_civ.toLowerCase(Locale.ROOT).contains(constraint.toString().toLowerCase(Locale.ROOT).trim()))) {
+                        if (item.unitName.toLowerCase(Locale.ROOT).contains(constraint.toString().toLowerCase(Locale.ROOT).trim()) || (item.unitCiv.toLowerCase(Locale.ROOT).contains(constraint.toString().toLowerCase(Locale.ROOT).trim()))) {
                             filteredList.add(item)
                         }
                     }
                 }
 
-                var results: FilterResults = FilterResults()
+                val results = FilterResults()
                 results.values = filteredList
 
                 return results

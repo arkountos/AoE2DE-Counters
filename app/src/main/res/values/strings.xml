@@ -88,6 +88,9 @@
         <item>Leitis</item>
         <item>Keshik</item>
         <item>FlamingCamel</item>
+        <item>Coustillier</item>
+        <item>FlemishMilitia</item>
+        <item>Serjeant</item>
     </string-array>
 
     <!-->Base Units<-->
@@ -108,6 +111,7 @@
         <item>Janissary</item>
         <item>Slinger</item>
         <item>TeutonicKnight</item>
+        <item>Coustillier</item>
     </string-array>
 
     <string name="SpearmanLine">Spearman Line</string>
@@ -125,6 +129,7 @@
         <item>Cataphract</item>
         <item>Janissary</item>
         <item>Slinger</item>
+        <item>FlemishMilitia</item>
     </string-array>
 
     <string name="EagleLine">Eagle Line</string>
@@ -168,6 +173,8 @@
         <item>Arambai</item>
         <item>RattanArcher</item>
         <item>WarWagon</item>
+        <item>Serjeant</item>
+        <item>Coustillier</item>
     </string-array>
 
     <string name="SkirmisherLine">Skirmisher Line</string>
@@ -205,6 +212,8 @@
         <item>Konnik</item>
         <item>Leitis</item>
         <item>Keshik</item>
+        <item>Serjeant</item>
+        <item>FlemishMilitia</item>
     </string-array>
 
     <string name="CavalryArcherLine">Cavalry Archer Line</string>
@@ -228,6 +237,8 @@
         <item>Kamayuk</item>
         <item>CamelArcher</item>
         <item>RattanArcher</item>
+        <item>Coustillier</item>
+        <item>FlemishMilitia</item>
     </string-array>
 
     <string name="HandCannoneer">Hand Cannoneer</string>
@@ -265,6 +276,9 @@
         <item>Mameluke</item>
         <item>FlamingCamel</item>
         <item>Berserk</item>
+        <item>Serjeant</item>
+        <item>Coustillier</item>
+        <item>FlemishMilitia</item>
     </string-array>
 
 
@@ -304,6 +318,7 @@
         <item>TeutonicKnight</item>
         <item>RattanArcher</item>
         <item>Berserk</item>
+        <item>Serjeant</item>
     </string-array>
 
 
@@ -359,6 +374,8 @@
         <item>Kipchak</item>
         <item>Leitis</item>
         <item>Keshik</item>
+        <item>Coustillier</item>
+        <item>FlemishMilitia</item>
     </string-array>
 
 
@@ -384,6 +401,7 @@
         <item>Condottiero</item>
         <item>Leitis</item>
         <item>Missionary</item>
+        <item>Coustillier</item>
     </string-array>
 
     <string name="ScorpionLine">Scorpion Line</string>
@@ -407,6 +425,7 @@
         <item>Tarkan</item>
         <item>Condottiero</item>
         <item>Huskarl</item>
+        <item>Coustillier</item>
     </string-array>
 
 
@@ -429,6 +448,7 @@
         <item>Tarkan</item>
         <item>Condottiero</item>
         <item>ImperialCamelRider</item>
+        <item>Coustillier</item>
     </string-array>
 
     <string name="SiegeTower">Siege Tower</string>
@@ -450,6 +470,7 @@
         <item>Tarkan</item>
         <item>Leitis</item>
         <item>ImperialCamelRider</item>
+        <item>Coustillier</item>
     </string-array>
 
     <string name="Monk">Monk</string>
@@ -505,6 +526,7 @@
         <item>Tarkan</item>
         <item>MagyarHuszar</item>
         <item>Mangudai</item>
+        <item>Coustillier</item>
     </string-array>
 
     <string name="GalleyLine">Galley Line</string>
@@ -558,6 +580,63 @@
 
 
     <!-->Unique Units here<-->
+
+    <string name="Coustillier">Coustillier</string>
+    <string name="CoustillierI">Coustillier</string>
+    <string name="CoustillierD">Burgundian unique cavalry unit which can charge its attack. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.</string>
+    <string name="CoustillierC">Burgundians</string>
+    <string name="CoustillierT">Cavalry</string>
+    <string-array name="CoustillierCounters">
+        <item>SpearmanLine</item>
+        <item>KnightLine</item>
+        <item>Boyar</item>
+        <item>Kamayuk</item>
+        <item>GenoeseCrossbowman</item>
+        <item>Mameluke</item>
+        <item>CamelLine</item>
+        <item>WarElephant</item>
+        <item>Monk</item>
+    </string-array>
+
+    <string name="FlemishMilitia">Flemish Militia</string>
+    <string name="FlemishMilitiaI">FlemishMilitia</string>
+    <string name="FlemishMilitiaD">Burgundian unique infantry unit. Strong vs. cavalry. Weak vs. archers.</string>
+    <string name="FlemishMilitiaC">Burgundians</string>
+    <string name="FlemishMilitiaT">Infantry</string>
+    <string-array name="FlemishMilitiaCounters">
+        <item>PlumedArcher</item>
+        <item>ArcherLine</item>
+        <item>ScorpionLine</item>
+        <item>MangonelLine</item>
+        <item>HandCannoneer</item>
+        <item>Janissary</item>
+        <item>Monk</item>
+        <item>Slinger</item>
+        <item>Cataphract</item>
+        <item>TeutonicKnight</item>
+        <item>Samurai</item>
+        <item>OrganGun</item>
+    </string-array>
+
+    <string name="Serjeant">Serjeant</string>
+    <string name="SerjeantI">Serjeant</string>
+    <string name="SerjeantD">Sicilian unique infantry unit which can construct Donjons.</string>
+    <string name="SerjeantC">Sicilians</string>
+    <string name="SerjeantT">Infantry</string>
+    <string-array name="SerjeantCounters">
+        <item>ScorpionLine</item>
+        <item>MangonelLine</item>
+        <item>HandCannoneer</item>
+        <item>Conquistador</item>
+        <item>Janissary</item>
+        <item>Slinger</item>
+        <item>Monk</item>
+        <item>Cataphract</item>
+        <item>Leitis</item>
+        <item>Samurai</item>
+        <item>TeutonicKnight</item>
+        <item>Jaguar</item>
+    </string-array>
 
     <string name="Longbowman">Longbowman</string>
     <string name="LongbowmanI">Longbowman</string>
@@ -615,7 +694,6 @@
         <item>EagleLine</item>
         <item>SkirmisherLine</item>
         <item>ScorpionLine</item>
-        <item>BatteringRamLine</item>
         <item>MangonelLine</item>
         <item>Genitour</item>
         <item>Huskarl</item>

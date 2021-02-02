@@ -21,7 +21,15 @@
         android:icon="@drawable/ic_baseline_star_24"
         android:title="Rate Us"/>
     </group>
-<!--    <item-->
+
+    <group android:id="@+id/mode">
+        <item
+            android:id="@+id/drawer_menu_mode"
+            android:icon="@drawable/ic_baseline_dark_mode_24"
+            android:title="Dark Mode"/>
+    </group>
+
+    <!--    <item-->
 <!--        android:id="@+id/drawer_menu_wololo"-->
 <!--        android:icon="@drawable/ic_launcher_background"-->
 <!--        android:title="Wololo"/>-->

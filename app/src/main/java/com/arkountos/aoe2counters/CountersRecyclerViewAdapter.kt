@@ -15,27 +15,23 @@ class CountersRecyclerViewAdapter(private val context: Context, private val unit
     private var unitsListFull: MutableList<Unit> = unitsList.toMutableList()
 
     class MyViewHolder(itemView: View) : ViewHolder(itemView) {
-        var unit_image: ImageView = itemView.findViewById(R.id.app_icon)
-        var unit_name: TextView = itemView.findViewById(R.id.unit_name)
-        var unit_civ: TextView = itemView.findViewById(R.id.unit_civ)
-//        var unit_description: TextView = itemView.findViewById(R.id.unit_description)
-        var unit_civ_image: ImageView = itemView.findViewById(R.id.unit_civ_image)
-//        var cardView: CardView = itemView.findViewById(R.id.card)
-//        var text_layout: LinearLayout = itemView.findViewById(R.id.text_layout)
-//
+        var unitImage: ImageView = itemView.findViewById(R.id.app_icon)
+        var unitName: TextView = itemView.findViewById(R.id.unit_name)
+        var unitCiv: TextView = itemView.findViewById(R.id.unit_civ)
+        var unitCivImage: ImageView = itemView.findViewById(R.id.unit_civ_image)
     }
 
-    fun emptyUnitsList(){
+    private fun emptyUnitsList(){
         this.printUnitsList()
         unitsListFull = mutableListOf()
         this.printUnitsList()
     }
 
-    fun setUnitsList(newUnitsListFull: MutableList<Unit>){
+    private fun setUnitsList(newUnitsListFull: MutableList<Unit>){
         unitsListFull = newUnitsListFull
     }
 
-    fun printUnitsList(){
+    private fun printUnitsList(){
         Log.d("RecyclerViewAdapter", unitsListFull.toString())
     }
 
@@ -45,14 +41,14 @@ class CountersRecyclerViewAdapter(private val context: Context, private val unit
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        var currentItem = unitsList[position]
-        holder.unit_name.text = currentItem.unit_name
-        holder.unit_civ.text = currentItem.unit_civ
+        val currentItem = unitsList[position]
+        holder.unitName.text = currentItem.unitName
+        holder.unitCiv.text = currentItem.unitCiv
 //        holder.unit_description.text = currentItem.unit_description
 
-        holder.unit_image.setImageResource(context.resources.getIdentifier(currentItem.unit_image, "drawable", context.packageName))
+        holder.unitImage.setImageResource(context.resources.getIdentifier(currentItem.unitImage, "drawable", context.packageName))
 
-        holder.unit_civ_image.setImageResource(context.resources.getIdentifier(currentItem.unit_civ.toLowerCase(Locale.ROOT), "drawable", context.packageName))
+        holder.unitCivImage.setImageResource(context.resources.getIdentifier(currentItem.unitCiv.toLowerCase(Locale.ROOT), "drawable", context.packageName))
         Log.d("CHECK", "OKKKK")
 //        holder.cardView.setOnLongClickListener {
 //            if (holder.text_layout.layoutParams.height != RecyclerView.LayoutParams.WRAP_CONTENT) {
@@ -83,20 +79,20 @@ class CountersRecyclerViewAdapter(private val context: Context, private val unit
     override fun getFilter(): Filter {
         return object:Filter(){
             override fun performFiltering(constraint: CharSequence?): FilterResults {
-                var filteredList: MutableList<Unit> = mutableListOf()
+                val filteredList: MutableList<Unit> = mutableListOf()
 
                 if (constraint == null || constraint.isEmpty()){
                     filteredList.addAll(unitsListFull)
                 }
                 else {
                     for (item in unitsListFull){
-                        if (item.unit_name.toLowerCase(Locale.ROOT).contains(constraint.toString().toLowerCase(Locale.ROOT).trim()) || (item.unit_civ.toLowerCase(Locale.ROOT).contains(constraint.toString().toLowerCase(Locale.ROOT).trim()))) {
+                        if (item.unitName.toLowerCase(Locale.ROOT).contains(constraint.toString().toLowerCase(Locale.ROOT).trim()) || (item.unitCiv.toLowerCase(Locale.ROOT).contains(constraint.toString().toLowerCase(Locale.ROOT).trim()))) {
                             filteredList.add(item)
                         }
                     }
                 }
 
-                var results: FilterResults = FilterResults()
+                val results = FilterResults()
                 results.values = filteredList
 
                 return results

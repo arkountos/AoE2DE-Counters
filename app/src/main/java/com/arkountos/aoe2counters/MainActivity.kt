@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
 import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -40,8 +41,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // FORCE DARK MODE BECAUSE YOU ARE COOL
-        AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
+//        // FORCE DARK MODE BECAUSE YOU ARE COOL
+//        AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
+        val sharedPrefs = getSharedPreferences("sharedPrefs", MODE_PRIVATE)
+        val nightMode = sharedPrefs.getString("nightMode", "").toString()
+        if (nightMode == "OFF"){
+            AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
+        }
+        else{
+            AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
+        }
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -59,32 +68,31 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
 
-        var fun_text = navigationView.getHeaderView(0).fun_text
-        var app_icon = navigationView.getHeaderView(0).app_icon
-        //findViewById<TextView>(R.id.fun_text)
-        var fun_text_array = resources.getStringArray(R.array.FunTextArray)
-        fun_text.text = fun_text_array[(fun_text_array.indices).random()]
-        app_icon.setImageResource(this.resources.getIdentifier("app_icon_castle", "drawable", this.packageName))
+        val funText = navigationView.getHeaderView(0).fun_text
+        val appIcon = navigationView.getHeaderView(0).app_icon
+        val funTextArray = resources.getStringArray(R.array.FunTextArray)
+        funText.text = funTextArray[(funTextArray.indices).random()]
+        appIcon.setImageResource(this.resources.getIdentifier("app_icon_castle", "drawable", this.packageName))
 
 
 
-        var units_array = resources.getStringArray(R.array.Units)
+        val unitsArray = resources.getStringArray(R.array.Units)
 
-        var unit_name: String
-        var unit_description: String
-        var unit_civilization: String
-        var unit_type: String
-        var unit_image: String
-        for (myUnit in units_array){
+        var unitName: String
+        var unitDescription: String
+        var unitCivilization: String
+        var unitType: String
+        var unitImage: String
+        for (myUnit in unitsArray){
             Log.d("Ident", myUnit)
-            unit_name = getString(resources.getIdentifier(myUnit, "string", this.packageName))
-            unit_description = getString(resources.getIdentifier(myUnit.toString() + "D", "string", this.packageName))
-            unit_civilization = getString(resources.getIdentifier(myUnit.toString() + "C", "string", this.packageName))
-            unit_type = getString(resources.getIdentifier(myUnit.toString() + "T", "string", this.packageName))
-            unit_image = getString(resources.getIdentifier(myUnit.toString() + "I", "string", this.packageName))
+            unitName = getString(resources.getIdentifier(myUnit, "string", this.packageName))
+            unitDescription = getString(resources.getIdentifier(myUnit.toString() + "D", "string", this.packageName))
+            unitCivilization = getString(resources.getIdentifier(myUnit.toString() + "C", "string", this.packageName))
+            unitType = getString(resources.getIdentifier(myUnit.toString() + "T", "string", this.packageName))
+            unitImage = getString(resources.getIdentifier(myUnit.toString() + "I", "string", this.packageName))
 
-            unitsList.add(Unit(unit_name, unit_civilization, unit_type, unit_description, unit_image))
-            Log.d("UnitsArray", ": $unit_name, " + R.string.Arambai)
+            unitsList.add(Unit(unitName, unitCivilization, unitType, unitDescription, unitImage))
+            Log.d("UnitsArray", ": $unitName, " + R.string.Arambai)
         }
 
 //        unitsList.add(Unit("Cataphract", R.string.CataphractDes.toString(), arrayOf()))
@@ -105,11 +113,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        var inflater: MenuInflater = menuInflater
+        val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.main_menu, menu)
 
-        var searchItem: MenuItem? = menu?.findItem(R.id.main_menu)
-        var searchView: SearchView = searchItem?.actionView as SearchView
+        val searchItem: MenuItem? = menu?.findItem(R.id.main_menu)
+        val searchView: SearchView = searchItem?.actionView as SearchView
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
@@ -147,6 +155,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     startActivity(myAppLinkToMarket)
                 } catch (e: ActivityNotFoundException) {
                     Toast.makeText(this, " unable to find market app", Toast.LENGTH_LONG).show()
+                }
+            }
+            R.id.drawer_menu_mode -> {
+                val sharedPrefs = getSharedPreferences("sharedPrefs", MODE_PRIVATE)
+                val editor = sharedPrefs.edit()
+                val nightMode = sharedPrefs.getString("nightMode", "").toString()
+                if (nightMode == "ON"){
+                    AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
+                    editor.putString("nightMode", "OFF")
+                    editor.apply()
+                }
+                else {
+                    AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
+                    editor.putString("nightMode", "ON")
+                    editor.apply()
                 }
             }
             else -> {
