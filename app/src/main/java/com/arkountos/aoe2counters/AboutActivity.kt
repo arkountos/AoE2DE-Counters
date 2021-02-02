@@ -1,4 +1,4 @@
-package com.example.aoe2decounters
+package com.arkountos.aoe2counters
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

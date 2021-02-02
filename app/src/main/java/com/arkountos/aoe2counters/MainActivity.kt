@@ -1,11 +1,10 @@
-package com.example.aoe2decounters
+package com.arkountos.aoe2counters
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import android.view.Gravity
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -20,6 +19,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
+import kotlinx.android.synthetic.main.drawer_header.view.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -57,6 +57,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawer.addDrawerListener(toggle)
         toggle.isDrawerIndicatorEnabled = true
         toggle.syncState()
+
+
+        var fun_text = navigationView.getHeaderView(0).fun_text
+        var app_icon = navigationView.getHeaderView(0).app_icon
+        //findViewById<TextView>(R.id.fun_text)
+        var fun_text_array = resources.getStringArray(R.array.FunTextArray)
+        fun_text.text = fun_text_array[(fun_text_array.indices).random()]
+        app_icon.setImageResource(this.resources.getIdentifier("app_icon_castle", "drawable", this.packageName))
+
+
 
         var units_array = resources.getStringArray(R.array.Units)
 

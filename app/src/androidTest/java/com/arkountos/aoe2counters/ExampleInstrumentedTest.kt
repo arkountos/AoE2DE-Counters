@@ -1,4 +1,4 @@
-package com.example.aoe2decounters
+package com.arkountos.aoe2counters
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

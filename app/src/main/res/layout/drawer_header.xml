@@ -19,7 +19,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="@string/content_description_media"
-            android:scaleType="centerCrop"
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <LinearLayout
@@ -37,6 +36,7 @@
                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
             <TextView
+                android:id="@+id/fun_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"

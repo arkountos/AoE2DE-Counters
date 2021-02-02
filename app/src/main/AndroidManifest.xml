@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.aoe2decounters">
+    package="com.arkountos.aoe2counters">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_icon_castle"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UnitViewActivity"
+        <activity android:name="com.arkountos.aoe2counters.UnitViewActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".AboutActivity" />
+        <activity android:name="com.arkountos.aoe2counters.AboutActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.arkountos.aoe2counters.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

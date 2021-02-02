@@ -21,10 +21,10 @@
         android:icon="@drawable/ic_baseline_star_24"
         android:title="Rate Us"/>
     </group>
-    <item
-        android:id="@+id/drawer_menu_wololo"
-        android:icon="@drawable/ic_launcher_background"
-        android:title="Wololo"/>
+<!--    <item-->
+<!--        android:id="@+id/drawer_menu_wololo"-->
+<!--        android:icon="@drawable/ic_launcher_background"-->
+<!--        android:title="Wololo"/>-->
 
 
 

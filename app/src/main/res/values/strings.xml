@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AoE2DE Counters</string>
+    <string name="app_name">AoE2 Counters</string>
     <string name="title">Title</string>
     <string name="secondary_text">Secondary Text</string>
     <string name="supporting_text">Supporting Text</string>
@@ -7,6 +7,17 @@
     <string name="open">open</string>
     <string name="close">close</string>
     <string name="Disclaimer">"Age of Empires 2: Definitive Edition" © Microsoft Corporation. "AoE2DE Counters" was created under Microsoft\'s "Game Content Usage Rules" using assets from "Age of Empires 2: Definitive Edition", and it is not endorsed by or affiliated with Microsoft.  </string>
+    <string name="About">Images of the app were taken from the <a href="https://ageofempires.fandom.com/wiki/Age_of_Empires_Series_Wiki">AoE2 Fandom page</a> and from <a href="https://www.flaticon.com/">Flaticon</a>. The counters are mainly based on the in game information. This is an app in development and feedback is really appreciated. Cheers!</string>
+
+    <string-array name="FunTextArray">
+        <item>\"But can it launch a 90 kg projectile over 300 meters?\"</item>
+        <item>Damn Huskarls!</item>
+        <item>Nice town, I\'ll take it</item>
+        <item>11</item>
+        <item>Don\'t play the Persian TC Drop!</item>
+        <item>Lure your boars before they lure you!</item>
+        <item>Bleda will lead us to ruin! Perhaps he should not return from his boar hunt…</item>
+    </string-array>
 
     <string-array name="Units">
         <item>MilitiaLine</item>
@@ -167,7 +178,6 @@
     <string-array name="SkirmisherLineCounters">
         <item>MilitiaLine</item>
         <item>EagleLine</item>
-        <item>ArcherLine</item>
         <item>ScoutLine</item>
         <item>KnightLine</item>
         <item>CamelLine</item>
@@ -299,7 +309,7 @@
 
     <string name="BattleElephantLine">Battle Elephant Line</string>
     <string name="BattleElephantLineD">Slow and heavy cavalry.</string>
-    <string name="BattleElephantLineC">Burmese, Khmer, Malay, Vietnamese</string>
+    <string name="BattleElephantLineC">Generic</string>
     <string name="BattleElephantLineT">Cavalry</string>
     <string name="BattleElephantLineI">BattleElephant</string>
     <string-array name="BattleElephantLineCounters">
@@ -581,6 +591,8 @@
     <string name="WoadRaiderC">Celts</string>
     <string name="WoadRaiderT">Infantry</string>
     <string-array name="WoadRaiderCounters">
+        <item>MilitiaLine</item>
+        <item>CavalryArcherLine</item>
         <item>HandCannoneer</item>
         <item>Jaguar</item>
         <item>Slinger</item>
@@ -802,7 +814,7 @@
     </string-array>
 
     <string name="WarWagon">War Wagon</string>
-    <string name="WarWagonI">War Wagon</string>
+    <string name="WarWagonI">WarWagon</string>
     <string name="WarWagonD">Korean unique unit. Heavily armored horse-drawn archer unit.</string>
     <string name="WarWagonC">Koreans</string>
     <string name="WarWagonT">Archer, Cavalry</string>
@@ -1185,7 +1197,6 @@
     <string-array name="ImperialSkirmisherCounters">
         <item>MilitiaLine</item>
         <item>EagleLine</item>
-        <item>ArcherLine</item>
         <item>ScoutLine</item>
         <item>KnightLine</item>
         <item>CamelLine</item>

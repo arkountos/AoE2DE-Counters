@@ -1,4 +1,4 @@
-package com.example.aoe2decounters
+package com.arkountos.aoe2counters
 
 import org.junit.Test
 
